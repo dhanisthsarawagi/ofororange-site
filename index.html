@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>O for Orange — Juice · Coffee · Food, Surat</title>
-<meta name="description" content="O for Orange, Surat. Single-origin Udaygiri coffee, fresh-squeezed OG OJ, grilled cheese, rice bowls, Roman pizza and smoothie bowls. Entirely vegetarian.">
+<meta name="description" content="O for Orange, Surat. Freshly squeezed Valencia orange juice, double-shot coffee, orange peri peri fries, burgers, croissants and smoothie bowls. Vegetarian. Epic Eats Food Court, 7 AM to 1:30 AM.">
 <meta property="og:title" content="O for Orange — Juice · Coffee · Food">
-<meta property="og:description" content="Single-origin Udaygiri coffee, fresh-squeezed orange juice and an entirely vegetarian menu in Surat.">
+<meta property="og:description" content="Fresh Valencia orange juice, coffee and an orange-led vegetarian menu in Surat.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ofororange.com/">
 <meta property="og:image" content="https://ofororange.com/img/fries.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#E8651A">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"O for Orange","url":"https://ofororange.com/","image":"https://ofororange.com/img/fries.jpg","telephone":"+918490936644","servesCuisine":["Coffee","Juice","Vegetarian"],"priceRange":"₹₹","address":{"@type":"PostalAddress","streetAddress":"O For Orange, Epic Eats Food Court, opp. Jolly Party Plot","addressLocality":"Surat","addressRegion":"Gujarat","postalCode":"395007","addressCountry":"IN"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"01:30"},"sameAs":["https://instagram.com/ofororange._"]}
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"O for Orange","url":"https://ofororange.com/","image":"https://ofororange.com/img/fries.jpg","telephone":"+918490936644","servesCuisine":["Coffee","Juice","Vegetarian"],"address":{"@type":"PostalAddress","streetAddress":"O For Orange, Epic Eats Food Court, opp. Jolly Party Plot","addressLocality":"Surat","addressRegion":"Gujarat","postalCode":"395007","addressCountry":"IN"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"01:30"},"sameAs":["https://instagram.com/ofororange._"]}
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23E8651A'/%3E%3Ccircle cx='32' cy='32' r='11' fill='none' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,6 +63,7 @@ nav ul a:hover{color:var(--orange)}
 .hero-art{position:relative;aspect-ratio:1;max-width:420px;margin-inline:auto;width:100%}
 .hero-art .disc{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff9a4d,var(--orange) 55%,#b83f05);box-shadow:0 40px 80px -30px rgba(232,101,26,.6)}
 .hero-art svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 60s linear infinite}
+.hero-art .ph{position:absolute;inset:22%;width:56%;height:56%;object-fit:cover;border-radius:50%;border:6px solid #fff3e6;box-shadow:0 20px 40px -16px rgba(0,0,0,.5)}
 .hero-art .tag{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font:600 .8rem var(--sans);box-shadow:0 10px 30px -12px rgba(0,0,0,.3)}
 .hero-art .tag small{display:block;font:400 .7rem var(--sans);color:var(--mut)}
 .t1{left:-6%;top:14%}.t2{right:-4%;bottom:12%}
@@ -72,7 +73,7 @@ nav ul a:hover{color:var(--orange)}
 
 /* marquee */
 .strip{background:var(--ink);color:var(--cream);overflow:hidden;white-space:nowrap;padding:14px 0;font:500 .95rem var(--disp);letter-spacing:.22em;text-transform:uppercase}
-.strip div{display:inline-block;animation:slide 40s linear infinite}
+.strip div{display:inline-block;animation:slide 50s linear infinite}
 .strip span{margin:0 22px}.strip span:nth-child(even){color:var(--orange)}
 @keyframes slide{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.strip div{animation:none}}
@@ -81,75 +82,6 @@ section{padding:84px 0}
 h2{font:700 clamp(2rem,5vw,3.2rem)/1 var(--disp);text-transform:uppercase;letter-spacing:.01em;margin-top:12px}
 h2 em{font:italic 600 .9em var(--serif);text-transform:none;color:var(--orange)}
 .sub{color:var(--mut);max-width:38rem;margin-top:14px}
-
-/* signatures */
-.sig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:40px}
-.sig{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:10px;transition:.25s}
-.sig:hover{transform:translateY(-4px);border-color:var(--orange)}
-.sig .k{font:600 .72rem var(--disp);letter-spacing:.22em;text-transform:uppercase;color:var(--orange)}
-.sig h3{font:italic 700 1.55rem/1.15 var(--serif)}
-.sig p{color:var(--mut);font-size:.93rem;flex:1}
-.sig .pr{font:700 1.5rem var(--disp);color:var(--orange)}
-.pair{font-size:.78rem;color:var(--green);font-weight:600}
-
-/* coffee */
-.coffee{background:#1b140d;color:#FAF3E8}
-.coffee .eyebrow{color:#9ed699}
-.coffee .sub{color:#cdbca6}
-.cf{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.quote{font:italic 600 clamp(1.6rem,3.4vw,2.4rem)/1.25 var(--serif);border-left:4px solid var(--orange);padding-left:24px}
-.quote small{display:block;margin-top:14px;font:500 .78rem var(--disp);letter-spacing:.24em;text-transform:uppercase;color:#cdbca6;font-style:normal}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
-.fact{border:1px solid #3d2f21;border-radius:16px;padding:18px}
-.fact b{display:block;font:700 1.6rem var(--disp);color:var(--orange)}
-.fact span{font-size:.85rem;color:#cdbca6}
-@media(max-width:820px){.cf{grid-template-columns:1fr;gap:34px}}
-
-/* menu */
-.tabs{display:flex;gap:8px;overflow-x:auto;padding:16px 0 10px;margin-top:20px;scrollbar-width:none;position:sticky;top:64px;background:var(--cream);z-index:5}
-.tabs::-webkit-scrollbar{display:none}
-.tab{flex:none;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:999px;font:500 .8rem var(--disp);letter-spacing:.13em;text-transform:uppercase;transition:.15s}
-.tab:hover{border-color:var(--orange)}
-.tab[aria-selected=true]{background:var(--orange);border-color:var(--orange);color:#fff}
-.cat{margin-top:36px}
-.cat[hidden],.byd[hidden]{display:none}
-.cat-h{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:10px}
-.cat-h .n{background:var(--orange);color:#fff;font:600 .9rem var(--disp);padding:4px 9px}
-.cat-h h3{font:700 1.7rem var(--disp);text-transform:uppercase;letter-spacing:.06em}
-.cat-h p{color:var(--mut);font-size:.92rem}
-.items{display:grid;grid-template-columns:1fr 1fr;column-gap:48px}
-@media(max-width:760px){.items{grid-template-columns:1fr}}
-.item{padding:14px 0;border-bottom:1px dotted var(--line)}
-.row{display:flex;align-items:baseline;gap:8px}
-.row .nm{font-weight:600}
-.row .dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px)}
-.row .p{font:700 1.15rem var(--disp);color:var(--orange)}
-.item .d{font-size:.88rem;color:var(--mut);font-style:italic;margin-top:2px}
-.item .m{font-size:.76rem;color:var(--green);font-weight:600;margin-top:3px}
-.star{color:var(--orange)}
-.only{font:600 .62rem var(--disp);letter-spacing:.12em;background:var(--green);color:#fff;padding:2px 7px;border-radius:3px;text-transform:uppercase;vertical-align:2px;margin-left:4px}
-@media(prefers-color-scheme:dark){.only{color:#0e1d0c}}
-.note{margin-top:14px;font-size:.88rem;color:var(--mut)}
-.note b{color:var(--orange)}
-.box{margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;display:grid;gap:10px}
-.box .r{display:grid;grid-template-columns:150px 1fr;gap:14px;font-size:.9rem;border-bottom:1px dotted var(--line);padding-bottom:10px}
-.box .r:last-child{border:0;padding:0}
-.box .r b{font:600 .75rem var(--disp);letter-spacing:.16em;text-transform:uppercase;color:var(--orange);padding-top:3px}
-@media(max-width:560px){.box .r{grid-template-columns:1fr;gap:2px}}
-.legend{margin-top:44px;padding:18px 22px;border:1px solid var(--line);border-radius:14px;font-size:.85rem;color:var(--mut);text-align:center}
-
-/* build drink */
-.byd{margin-top:50px;background:var(--cream-2);border-left:6px solid var(--green);border-radius:6px 16px 16px 6px;padding:28px}
-.byd h3{font:700 1.5rem var(--disp);text-transform:uppercase;letter-spacing:.1em}
-.byd>p{color:var(--mut);font-size:.9rem;font-style:italic;margin:4px 0 18px}
-.byd-g{display:grid;grid-template-columns:1fr 1fr;gap:18px 40px}
-.byd-g b{display:block;font:600 .75rem var(--disp);letter-spacing:.18em;text-transform:uppercase;color:var(--orange);margin-bottom:3px}
-.byd-g div{font-size:.9rem}
-.byd-g .full{grid-column:1/-1}
-@media(max-width:640px){.byd-g{grid-template-columns:1fr}}
-
-/* hero photo */
-.hero-art .ph{position:absolute;inset:22%;width:56%;height:56%;object-fit:cover;border-radius:50%;border:6px solid #fff3e6;box-shadow:0 20px 40px -16px rgba(0,0,0,.5)}
 
 /* carousel */
 .reel{position:relative;overflow:hidden;color:#fff;padding:84px 0 70px;background:radial-gradient(120% 90% at 50% 0%,#ff9440 0%,var(--orange) 45%,#b83f05 100%)}
@@ -175,6 +107,53 @@ h2 em{font:italic 600 .9em var(--serif);text-transform:none;color:var(--orange)}
 .dot[aria-current=true]{background:#fff;width:28px;border-radius:6px}
 @media(max-width:640px){.stage{height:470px}.reel::before{width:520px;height:520px}.reel::after{width:760px;height:760px}}
 @media(prefers-reduced-motion:reduce){.slide{transition:none}}
+
+/* orange picks */
+.sig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:40px}
+.sig{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:10px;transition:.25s}
+.sig:hover{transform:translateY(-4px);border-color:var(--orange)}
+.sig .k{font:600 .72rem var(--disp);letter-spacing:.22em;text-transform:uppercase;color:var(--orange)}
+.sig h3{font:italic 700 1.55rem/1.15 var(--serif)}
+.sig p{color:var(--mut);font-size:.93rem;flex:1}
+.sig .pr{font:700 1.5rem var(--disp);color:var(--orange)}
+
+/* coffee */
+.coffee{background:#1b140d;color:#FAF3E8}
+.coffee .eyebrow{color:#9ed699}
+.coffee .sub{color:#cdbca6}
+.cf{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.quote{font:italic 600 clamp(1.6rem,3.4vw,2.4rem)/1.25 var(--serif);border-left:4px solid var(--orange);padding-left:24px}
+.quote small{display:block;margin-top:14px;font:500 .78rem var(--disp);letter-spacing:.24em;text-transform:uppercase;color:#cdbca6;font-style:normal}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.fact{border:1px solid #3d2f21;border-radius:16px;padding:18px}
+.fact b{display:block;font:700 1.6rem var(--disp);color:var(--orange)}
+.fact span{font-size:.85rem;color:#cdbca6}
+@media(max-width:820px){.cf{grid-template-columns:1fr;gap:34px}}
+
+/* menu */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:16px 0 10px;margin-top:20px;scrollbar-width:none;position:sticky;top:64px;background:var(--cream);z-index:5}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:999px;font:500 .8rem var(--disp);letter-spacing:.13em;text-transform:uppercase;transition:.15s}
+.tab:hover{border-color:var(--orange)}
+.tab[aria-selected=true]{background:var(--orange);border-color:var(--orange);color:#fff}
+.cat{margin-top:36px}
+.cat[hidden]{display:none}
+.cat-h{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:10px}
+.cat-h .n{background:var(--orange);color:#fff;font:600 .9rem var(--disp);padding:4px 9px}
+.cat-h h3{font:700 1.7rem var(--disp);text-transform:uppercase;letter-spacing:.06em}
+.cat-h p{color:var(--mut);font-size:.92rem}
+.items{display:grid;grid-template-columns:1fr 1fr;column-gap:48px}
+@media(max-width:760px){.items{grid-template-columns:1fr}}
+.item{padding:14px 0;border-bottom:1px dotted var(--line)}
+.row{display:flex;align-items:baseline;gap:8px}
+.row .nm{font-weight:600}
+.row .dots{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px)}
+.row .p{font:700 1.15rem var(--disp);color:var(--orange)}
+.item .d{font-size:.88rem;color:var(--mut);font-style:italic;margin-top:2px}
+.item .m{font-size:.76rem;color:var(--green);font-weight:600;margin-top:3px}
+.note{margin-top:14px;font-size:.88rem;color:var(--mut)}
+.note b{color:var(--orange)}
+.legend{margin-top:44px;padding:18px 22px;border:1px solid var(--line);border-radius:14px;font-size:.85rem;color:var(--mut);text-align:center}
 
 /* visit */
 .visit{background:var(--orange);color:#fff}
@@ -203,7 +182,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
       </a>
       <ul>
         <li><a href="#reel">Gallery</a></li>
-        <li><a href="#signatures">Signatures</a></li>
+        <li><a href="#picks">Orange picks</a></li>
         <li><a href="#coffee">Coffee</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#visit">Visit</a></li>
@@ -217,37 +196,36 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
 <div class="wrap hero">
   <div>
     <span class="eyebrow">Juice · Coffee · Food — Surat</span>
-    <h1><b>O</b> for<br>Orange<em>One estate, one shot, no compromise.</em></h1>
-    <p class="lede">Fresh-squeezed orange juice, single-origin Udaygiri coffee and an all-vegetarian kitchen. Grilled cheese with marmalade, burnt garlic rice, Roman pizza, smoothie bowls. Built around one fruit, done properly.</p>
+    <h1><b>O</b> for<br>Orange<em>Orange, on everything.</em></h1>
+    <p class="lede">Freshly squeezed Valencia orange juice, double-shot coffee and a kitchen that cooks with orange: orange peri peri fries, orange mayo burgers, marmalade croissants, smoothie bowls. Find us at Epic Eats Food Court, Surat.</p>
     <div class="cta">
       <a class="btn" href="#menu">Explore the menu</a>
       <a class="btn ghost" href="#visit">Find us</a>
     </div>
     <div class="badge-row">
-      <span class="badge"><i>●</i> 100% vegetarian</span>
-      <span class="badge">Single-origin Udaygiri</span>
-      <span class="badge">Prices incl. GST</span>
+      <span class="badge"><i>●</i> Vegetarian menu</span>
+      <span class="badge">Open 7 AM – 1:30 AM</span>
     </div>
   </div>
   <div class="hero-art" aria-hidden="true">
     <div class="disc"></div>
     <img class="ph" src="img/fries.jpg" alt="" width="400" height="400" fetchpriority="high">
     <svg viewBox="0 0 200 200"><g stroke="#fff" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"><path d="M100 10v22M100 168v22M10 100h22M168 100h22M36 36l15 15M149 149l15 15M164 36l-15 15M51 149l-15 15"/></g></svg>
-    <div class="tag t1">OG OJ<small>the reason we exist</small></div>
-    <div class="tag t2">Jaffa<small>chocolate · orange · espresso</small></div>
+    <div class="tag t1">Valencia Orange Juice<small>freshly squeezed</small></div>
+    <div class="tag t2">Orange Peri Peri Fries<small>with orange mayo</small></div>
   </div>
 </div>
 
 <div class="strip" aria-hidden="true"><div>
-  <span>Fresh-squeezed OG OJ</span><span>Single-origin Udaygiri</span><span>Orange Grilled Cheese</span><span>Jaffa</span><span>Roman Pizza</span><span>Smoothie Bowls</span><span>Ceremonial Matcha</span><span>100% Vegetarian</span>
-  <span>Fresh-squeezed OG OJ</span><span>Single-origin Udaygiri</span><span>Orange Grilled Cheese</span><span>Jaffa</span><span>Roman Pizza</span><span>Smoothie Bowls</span><span>Ceremonial Matcha</span><span>100% Vegetarian</span>
+  <span>Valencia Orange Juice</span><span>Orange Peri Peri Fries</span><span>Orange Glaze Croissant</span><span>O Paneer Gochujang Burger</span><span>Orange Basil Smash</span><span>Orange Sorbet</span><span>Mont Blanc</span><span>Orange Smoothie Bowl</span>
+  <span>Valencia Orange Juice</span><span>Orange Peri Peri Fries</span><span>Orange Glaze Croissant</span><span>O Paneer Gochujang Burger</span><span>Orange Basil Smash</span><span>Orange Sorbet</span><span>Mont Blanc</span><span>Orange Smoothie Bowl</span>
 </div></div>
 
 <section id="reel" class="reel" aria-label="Photo gallery">
   <div class="wrap">
     <span class="eyebrow">Squeezed fresh daily</span>
     <h2>Life's better <em>in orange</em></h2>
-    <p class="sub">Orange glaze, orange seats, orange juice. Swipe through a day at O for Orange.</p>
+    <p class="sub">Orange seats, orange glaze, orange everything. Swipe through a day at O for Orange.</p>
     <div class="stage" id="stage" tabindex="0" role="group" aria-roledescription="carousel" aria-label="O for Orange photos"></div>
     <div class="cap" id="cap" aria-live="polite"></div>
     <div class="ctrl">
@@ -258,11 +236,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
   </div>
 </section>
 
-<section id="signatures">
+<section id="picks">
   <div class="wrap">
-    <span class="eyebrow">House originals</span>
-    <h2>Only here, <em>and worth the trip</em></h2>
-    <p class="sub">The things we'd order first. Each one comes with a drink we think it belongs next to.</p>
+    <span class="eyebrow">Orange picks</span>
+    <h2>Built around <em>the orange</em></h2>
+    <p class="sub">House orange mayo, orange marmalade with a gochujang kick, orange peri peri seasoning and fresh Valencia juice run through the menu. Start here.</p>
     <div class="sig-grid" id="sigs"></div>
   </div>
 </section>
@@ -270,17 +248,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
 <section id="coffee" class="coffee">
   <div class="wrap cf">
     <div>
-      <span class="eyebrow">Our coffee standard</span>
-      <h2 style="margin-bottom:22px">Single-origin <em>Udaygiri</em></h2>
-      <div class="quote">“One estate, one shot, no compromise.”<small>— O for Orange</small></div>
+      <span class="eyebrow">Coffee, with a twist</span>
+      <h2 style="margin-bottom:22px">Espresso <em>meets orange</em></h2>
+      <div class="quote">“A bright, citrusy take on the Americano.”<small>— Citrus Americano, ₹249</small></div>
     </div>
     <div>
-      <p class="sub" style="margin-top:0">Every espresso, latte and cold brew here runs on single-origin Udaygiri coffee, with no blends to hide behind. Pure in the cup, consistent from the first shot to the last.</p>
+      <p class="sub" style="margin-top:0">Our espresso drinks run on a double shot. Take it classic, go dairy-free with coconut milk, or let the orange in: freshly squeezed juice, honey, brown sugar, ginger ale or a cloud of vanilla cream.</p>
       <div class="facts">
-        <div class="fact"><b>15</b><span>coffee classics, hot or iced</span></div>
-        <div class="fact"><b>5</b><span>ceremonial-grade matcha drinks</span></div>
-        <div class="fact"><b>₹119</b><span>for the Udaygiri espresso</span></div>
-        <div class="fact"><b>Jaffa</b><span>chocolate · OJ · espresso, house signature</span></div>
+        <div class="fact"><b>Double shot</b><span>in every latte, flat white and americano</span></div>
+        <div class="fact"><b>₹89</b><span>espresso, the starting line</span></div>
+        <div class="fact"><b>Free</b><span>add-ons on Valencia Orange Juice: ginger ale, tonic, lemonade, coconut water</span></div>
+        <div class="fact"><b>100%</b><span>pure Valencia orange juice in our Orange Sorbet</span></div>
       </div>
     </div>
   </div>
@@ -288,26 +266,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
 
 <section id="menu">
   <div class="wrap">
-    <span class="eyebrow">The full menu · all vegetarian</span>
+    <span class="eyebrow">The full menu · vegetarian</span>
     <h2>What's <em>on</em></h2>
     <div class="tabs" role="tablist" id="tabs" aria-label="Menu categories"></div>
     <div id="menu-body"></div>
-
-    <div class="byd" id="byd">
-      <h3>Build your drink</h3>
-      <p>Shared blocks. Not every drink takes every block; each coffee and matcha lists what applies.</p>
-      <div class="byd-g">
-        <div><b>Temperature</b>Iced · Hot</div>
-        <div><b>Flavour</b>No flavour · Vanilla +₹20 · Hazelnut +₹25 · Sea Salt Caramel +₹25 · Brown Sugar Syrup +₹20</div>
-        <div><b>Milk</b>Whole · Coconut +₹25 · Almond +₹40 · Oat +₹40</div>
-        <div><b>Sweetener</b>No sugar · White · Brown · Honey · Stevia · Monk Fruit</div>
-        <div><b>Mixer</b>Tonic +₹30 · Ginger Ale +₹30 · Coconut Water +₹40 · Lemonade +₹12 · None</div>
-        <div><b>Cold foam</b>Cold Foam · None</div>
-        <div class="full"><b>Fruitzz · +₹20 each</b>Lime · Cranberry · Peach · Grape · Strawberry · Passion Fruit · Mango · Pineapple · Orange · Guava <i style="color:var(--mut)">(Matcha Latte limited to Cranberry, Strawberry, Passion Fruit, Mango, Guava)</i></div>
-      </div>
-    </div>
-
-    <div class="legend"><span class="star">★</span> Signature &nbsp;·&nbsp; <span class="only" style="margin:0">Only here</span> house original &nbsp;·&nbsp; ↗ pairs with &nbsp;·&nbsp; Entire menu vegetarian &nbsp;·&nbsp; Prices incl. GST<br>Customisations are listed per drink. Just tell the barista how you like it.</div>
+    <div class="legend">Portion sizes and customisations vary by item. Just tell us how you like it.</div>
   </div>
 </section>
 
@@ -338,24 +301,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
 
 <script>
 document.getElementById('yr').textContent=new Date().getFullYear();
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 /* ---- orange carousel ---- */
 (()=>{
  const PH=[
-  ["img/fries.jpg","Glazed to order","Crispy fries, orange glaze drizzle and a dip on the side."],
-  ["img/ogoj.jpg","OG OJ","Fresh-squeezed orange juice. The reason we exist."],
-  ["img/salad.jpg","Citrus in every bite","Orange segments, fresh herbs, a bowl that eats light."],
-  ["img/croissant.jpg","Buttery. Marmalade-bright.","Croissants out of the O for Orange box."],
-  ["img/glaze.jpg","The orange pour","Orange glaze, drizzled the moment it's ordered."],
-  ["img/burger.jpg","Grilled, pressed, stacked","Two hands required."],
-  ["img/jar.jpg","Cold, bottled, ours","House coolers and cold brew, ready to grab."],
-  ["img/dip.jpg","Dip it. Twice.","Extra dip is only ₹25."]
+  ["img/fries.jpg","Orange, on the side","Crinkle fries, orange mayo and a dip."],
+  ["img/ogoj.jpg","Orange on the label","Cold drinks, served with the O."],
+  ["img/salad.jpg","Citrus in every bite","Orange pieces, fresh herbs, a bowl that eats light."],
+  ["img/croissant.jpg","Warm croissants","Fresh out of the O for Orange box."],
+  ["img/glaze.jpg","The orange pour","Orange, drizzled the moment it's ordered."],
+  ["img/burger.jpg","Stacked, toasted, two hands","Burgers with house orange mayo."],
+  ["img/jar.jpg","Cold, chilled, ours","Grab one on the way out."],
+  ["img/dip.jpg","Dip it","Crinkle fries and something creamy."]
  ];
  const stage=document.getElementById('stage'),cap=document.getElementById('cap'),dots=document.getElementById('dots');
  const N=PH.length;let cur=0,timer=null,drag=null;
- stage.innerHTML=PH.map((p,i)=>`<figure class="slide" data-i="${i}"><img src="${p[0]}" alt="${esc2(p[1])} — ${esc2(p[2])}" loading="${i<3?'eager':'lazy'}" decoding="async"></figure>`).join('');
+ stage.innerHTML=PH.map((p,i)=>`<figure class="slide" data-i="${i}"><img src="${p[0]}" alt="${esc(p[1])} — ${esc(p[2])}" loading="${i<3?'eager':'lazy'}" decoding="async"></figure>`).join('');
  dots.innerHTML=PH.map((p,i)=>`<button class="dot" data-i="${i}" aria-label="Show photo ${i+1}"></button>`).join('');
- function esc2(s){return String(s).replace(/"/g,'&quot;')}
  const slides=[...stage.children],dotEls=[...dots.children];
  function render(){
   const w=slides[0].getBoundingClientRect().width||300;
@@ -372,7 +335,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
    s.setAttribute('aria-hidden',a===0?'false':'true');
   });
   dotEls.forEach((b,i)=>b.setAttribute('aria-current',i===cur));
-  cap.innerHTML=`<b>${PH[cur][1]}</b><span>${PH[cur][2]}</span>`;
+  cap.innerHTML=`<b>${esc(PH[cur][1])}</b><span>${esc(PH[cur][2])}</span>`;
  }
  const go=i=>{cur=(i+N)%N;render()};
  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
@@ -393,57 +356,100 @@ document.getElementById('yr').textContent=new Date().getFullYear();
  render();play();
 })();
 
-/* item: [name, price, desc, flags, pairs]  flags: s=signature star, S=signature, o=only here */
+/* ---- menu (source: food_costing sheet, "Menu Descriptions" tab; names, short descriptions, add-ons, selling price only) ---- */
+const SYR="Flavour syrup: vanilla, hazelnut or caramel";
+const REF="Add orange juice, ginger ale, tonic water, lemonade or coconut water";
+/* item: [name, price, description, add-ons] */
 const MENU=[
-{id:"grill",n:"01",t:"Grill & Press",items:[
- ["Orange Grilled Cheese",149,"+ cheese ₹40","s","Jaffa"],
- ["Orange Gochujang Burger",219,"grilled paneer, gochujang glaze, pickled cucumber · + cheese ₹40","so","OG OJ"],
- ["Cubano Paneer",199,"pressed paneer, mojo, tomato jam"],
- ["Jamaican Jerk Paneer",199,"jerk-paneer, escovitch, honey jerk sauce"],
- ["Double Paneer Burger",219,"two paneer slabs, chilli pepper + cream sauce · + cheese ₹40","","Cold Brew"],
- ["Falafel Pocket",139,"crispy falafel, mashwiya, pickled veg, tahini, pita"],
- ["Veggie Burger",140],["Aloo Tikki Burger",100]]},
-{id:"wraps",n:"02",t:"Wraps",items:[
- ["Paneer Shawarma Wrap",189,"","s"],["Chipotle Wrap",169],["BBQ Wrap",179],["Spicy Paneer Wrap",179],["Falafel Wrap",149]]},
-{id:"rice",n:"03",t:"Rice Bowls",sub:"filling, not heavy",items:[
- ["Burnt Garlic Rice Bowl",169,"","s","Fridge Cigarette"],["Mexican Rice Bowl",179],["Mushroom Rice Bowl",189],["Paneer Rice Bowl",199],["Veggie Rice Bowl",149]]},
-{id:"oven",n:"04",t:"From the Oven",sub:"Roman al taglio · thin, super-crispy",items:[
- ["Roma Pizza",279,"","s","Matcha Latte"],["Spicy Paneer Pizza",289],["Chimichurri Veggie Pizza",269],["Margherita",249]]},
-{id:"snacks",n:"05",t:"Fried Snacks",sub:"share, or don't",items:[
- ["Mozzarella Sticks",189],["Nachos",169],["Corn Ribs",129],["Onion Rings",119],["Crispy Corn",109],["Fries",99]],
- note:"Make any snack a moment: <b>orange glaze drizzle +₹20</b> · <b>extra dip +₹25</b> — Tzatziki · Salsa Verde · Whipped Queso Fresco"},
-{id:"bagels",n:"06",t:"Bagels & Pastry",items:[
- ["Orange Croissant",129,"buttery, marmalade-bright","so","Spanish Latte"],["Orange Bagel",139,"cream cheese & orange marmalade"],["Med Bagel",129,"labneh, sumac & capers"],["Butter Croissant",109]]},
-{id:"bowls",n:"07",t:"Smoothie Bowls",sub:"your bowl, your call",items:[
- ["Build Your Own Bowl",149],
- ["Mango Tango Bowl",169,"mango, banana, granola, dried nuts","s","Reef"],["Tropical Passion Bowl",169,"passion fruit, pineapple, guava, granola"],["Berry Blast Bowl",169,"strawberry, cranberry, berries, granola"],["Choco Banana Bowl",179,"cocoa, banana, dried nuts, chia"]],
- box:[["Base · pick 1","Vanilla soft-serve · Orange soft-serve +₹10 · Yogurt"],["Fruit · up to 2","Mango · Strawberry · Passion Fruit · Pineapple · Guava · Cranberry · Peach · Grape · Orange · Lime"],["Toppings · up to 3","Granola · Dried nuts · Banana · Berries · Chia seeds"],["Extras · up to 3","Extra nuts +₹20 · Extra granola +₹15 · Extra fruit +₹25"]]},
-{id:"sweet",n:"08",t:"Sweet",items:[
- ["Citrusy Tiramisu",169,"","s","Cortado"],["Toscakaka",159,"Swedish caramel-almond cake"],["Orange Tea Cake",160],["Churros",139,"","","Iced Shaken Espresso"],["Orange Chocolate Brownie",129],["Classic Chocolate Brownie",129],["Cookie",69]],
- note:"Soft serve — Vanilla <b>₹79</b> · Orange <b>₹89</b> · ★ Orange Softie Affogato <b>₹129</b> <i>(chocolate sauce on all)</i>"},
-{id:"coffee",n:"09",t:"Coffee Classics",sub:"single-origin Udaygiri",items:[
- ["Espresso",119,"the Udaygiri shot, pure","s"],["Latte",169,"silky steamed milk — our daily","s"],["Cold Brew",149,"slow toddy-steeped — low-acid, smooth","s"],["Jaffa",179,"chocolate · orange juice · espresso — the house signature","o"],
- ["Iced Shaken Espresso",149,"shaken over ice, splash of milk"],["Americano",129,"espresso & water"],["Cortado",159,"equal parts espresso & steamed milk"],["Cappuccino",159,"thick foam"],
- ["Macchiato",169,"marked with milk foam"],["Affogato",169,"espresso over vanilla ice cream"],["Spanish Latte",179,"condensed-milk sweetness"],["Vietnamese",179,"strong drip, condensed milk"],
- ["Flat White",179,"double espresso, micro-foam"],["Fridge Cigarette",179,"cold brew · diet coke · cold foam"],["Mocha",189,"rich chocolate"]]},
-{id:"matcha",n:"10",t:"Matcha",sub:"ceremonial-grade",items:[
- ["Matcha Latte",179,"steamed milk — the gateway","s"],["Matcha",159,"ceremonial-grade, neat"],["Dirty Matcha",189,"espresso shot over iced matcha"],["Matcha Affogato",189,"matcha & vanilla ice cream"],["Strawberry Cheesecake Matcha",199,"strawberry, cold foam, vanilla syrup, biscuit crumb"]]},
-{id:"bev",n:"11",t:"Other Beverages",sub:"where the orange lives",items:[
- ["OG OJ",149,"fresh-squeezed orange juice — straight or over ice. The reason we exist.","so"],["Reef",89,"house specialty cooler","o"],["Fruit Spritz",149,"pick a base, pick your fruit","s"],["Hibiscus Sparkling Cooler",139,"hibiscus, sparkling"],["Iced Chai Latte",119,"spiced tea over ice"],["Hot Masala Chai",69,"spiced Indian tea"]]}
+{id:"mains",n:"01",t:"Mains",items:[
+ ["Shakshuka",139,"Spiced tomato-capsicum gravy with paneer, served with toasted bread."]]},
+{id:"toasts",n:"02",t:"Toasts",items:[
+ ["Paneer Thecha Toast",149,"Toast piled with paneer, mozzarella and fiery Maharashtrian thecha."],
+ ["Garlic Bread",149,"Buttery garlic toast with a cheesy mozzarella crown."],
+ ["Chilli Cheese Toast",139,"Cheesy toast with green chilli, capsicum and garlic."],
+ ["The Golden Toast",49,"Golden buttered toast with a dusting of chaat masala."]]},
+{id:"salads",n:"03",t:"Salads",items:[
+ ["O Paneer Crunch Salad",249,"Crunchy greens, golden paneer and orange with a carrot-orange dressing."],
+ ["O Basil Salad",249,"Fresh greens, orange and basil with pesto and orange mayo."]]},
+{id:"bowls",n:"04",t:"Smoothie Bowls",items:[
+ ["Orange Smoothie Bowl",399,"Creamy orange-yogurt smoothie bowl with crunchy granola."],
+ ["Mixed Berry Smoothie Bowl",399,"Berry-yogurt smoothie bowl with banana, orange and granola."]]},
+{id:"croissants",n:"05",t:"Croissants",items:[
+ ["Butter Croissant",209,"Warm, flaky croissant finished with butter."],
+ ["O-Nutella Croissant",279,"Warm croissant with Nutella and fresh orange."],
+ ["O Caprese Croissant",299,"Croissant with basil pesto, cherry tomato and melted cheese."],
+ ["Orange Glaze Croissant",299,"Croissant with sweet-spicy orange marmalade and fresh orange."]]},
+{id:"fries",n:"06",t:"Fries & Sides",items:[
+ ["Regular Crinkle Fries",149,"Crisp crinkle fries with salt and mayo."],
+ ["Orange Peri Peri Crinkle Fries",169,"Crinkle fries tossed in orange peri peri, with orange mayo."],
+ ["Lemon Chilli Crinkle Fries",159,"Zesty lemon-chilli fries with orange mayo."],
+ ["O Rings — Peri Peri",199,"Crispy onion rings in orange peri peri, with orange mayo."],
+ ["O Loaded Fries",199,"Fries layered with cheese sauce, orange mayo and peri peri."],
+ ["O Loaded Nachos",249,"Nachos with salsa, cheese sauce, orange mayo and fresh orange."]]},
+{id:"burgers",n:"07",t:"Burgers",items:[
+ ["O Aloo Tikki Burger",129,"Crispy aloo tikki burger with orange mayo, cheese and lettuce."],
+ ["O Veggie Burger",159,"Veggie patty burger with orange mayo, cheese and lettuce."],
+ ["Hariyali Pesto Burger",179,"Green hariyali patty with a basil pesto cheese spread."],
+ ["O Jain Banana Burger",199,"Banana patty burger with cheese, made with no onion and no garlic."],
+ ["O Paneer Gochujang Burger",219,"Paneer patty brushed with orange gochujang and sriracha mayo."],
+ ["O Mexican Cheese Burst Burger",249,"Veggie and cheese patties with zesty Mexican salsa."],
+ ["O Cheese Burst Burger",249,"Double cheese patties with sriracha mayo and orange mayo."]]},
+{id:"wraps",n:"08",t:"Wraps",items:[
+ ["Orange Aloo Tikki Wrap",149,"Aloo tikki wrap with orange mayo, cheese and lettuce, toasted."],
+ ["Orange Veggie Wrap",179,"Veggie patty wrap with orange mayo, cheese and lettuce, toasted."],
+ ["Spicy Paneer Wrap",249,"Paneer patty wrap with orange mayo, cheese and lettuce, toasted."]]},
+{id:"rice",n:"09",t:"Rice Bowls",items:[
+ ["Orange Thai Basil Rice Bowl",299,"Thai curry with jasmine rice, peppers and caramelised orange."]]},
+{id:"hot",n:"10",t:"Hot Drinks",sub:"double-shot espresso base",items:[
+ ["Hot Tea",69,"Cardamom-ginger milk tea."],
+ ["Espresso",89,"A double shot of rich espresso.",REF],
+ ["Americano (hot)",109,"Double espresso lengthened with hot water.",REF],
+ ["Cappuccino",179,"Espresso with steamed milk and thick foam.",SYR],
+ ["Flat White",189,"Espresso with silky steamed milk.",SYR],
+ ["Latte (hot)",189,"Espresso with plenty of creamy steamed milk.",SYR],
+ ["Coconut Milk Latte (hot)",219,"Dairy-free espresso with warm steamed coconut milk.",SYR],
+ ["Citrus Americano (hot)",249,"Hot espresso with freshly squeezed orange juice, honey and brown sugar."]]},
+{id:"iced",n:"11",t:"Iced Coffee & Cold Brew",items:[
+ ["Americano (iced)",109,"Double espresso over ice and water.",REF],
+ ["Cold Brew",169,"Smooth, slow-steeped cold brew over ice.",REF],
+ ["Latte (iced)",189,"Iced espresso, milk and brown sugar syrup.",SYR],
+ ["Coconut Milk Latte (iced)",219,"Dairy-free iced espresso with coconut milk.",SYR],
+ ["Citrus Americano (iced)",249,"Iced espresso with freshly squeezed orange juice, honey and brown sugar."]]},
+{id:"coolers",n:"12",t:"Signature Coolers",sub:"coffee mocktails & fresh juice",items:[
+ ["Valencia Orange Juice",199,"Freshly squeezed, chilled Valencia orange juice.","Add ginger ale, tonic water, lemonade or coconut water — free"],
+ ["O-Espresso Ale",199,"Espresso, freshly squeezed orange juice and ginger ale."],
+ ["Mont Blanc",229,"Cold brew, freshly squeezed orange juice and vanilla cream."],
+ ["Mixed Berry Cloud",229,"Cold brew, mixed berry juice and cream."],
+ ["Coconut Cloud",219,"Coconut water and espresso vanilla cream."],
+ ["O-Shakerato",219,"Shaken espresso with condensed milk and milk.",SYR],
+ ["Orange Basil Smash",249,"Freshly squeezed orange juice, basil cordial and ginger ale."]]},
+{id:"desserts",n:"13",t:"Desserts",items:[
+ ["Vanilla Softy",99,"Rich and creamy vanilla soft serve."],
+ ["Chocolate Softy",99,"Rich and creamy chocolate soft serve."],
+ ["Affogato",189,"Soft serve topped with a hot double shot of espresso."],
+ ["Ó Cookies",149,"Orange-infused cookie."],
+ ["Ó Brownie",199,"Orange-infused brownie."],
+ ["Orange Sorbet",249,"Icy, refreshing sorbet of 100% pure Valencia orange juice."],
+ ["Brownie Sundae",299,"Hot brownie with Nutella and soft serve."]]},
+{id:"addons",n:"14",t:"Add-ons",sub:"customise any drink",items:[
+ ["Flavour Syrup",30,"Vanilla, hazelnut or caramel."],
+ ["Coconut Water",50,"A light, refreshing tropical twist."],
+ ["Tonic Water",60,"A crisp, bittersweet fizz."],
+ ["Ginger Ale",60,"A sweet fizz."],
+ ["Orange Juice",99,"A splash of freshly squeezed orange juice."]]}
 ];
 
-const SIGS=[
- ["Signature","Orange Grilled Cheese","Marmalade-bright grilled cheese, the sandwich that started it all.",149,"Jaffa"],
- ["Only here","Jaffa","Chocolate, fresh orange juice and a shot of Udaygiri espresso.",179,"Orange Grilled Cheese"],
- ["Only here","OG OJ","Fresh-squeezed orange juice, straight or over ice.",149,"Orange Gochujang Burger"],
- ["Signature","Citrusy Tiramisu","Tiramisu with an orange edge.",169,"Cortado"],
- ["Only here","Orange Croissant","Buttery, marmalade-bright.",129,"Spanish Latte"],
- ["Signature","Roma Pizza","Roman al taglio. Thin and super-crispy.",279,"Matcha Latte"]
+/* orange-forward items, taken from the menu above */
+const PICKS=[
+ ["Drink","Valencia Orange Juice","Freshly squeezed, chilled Valencia orange juice.",199],
+ ["Fries","Orange Peri Peri Crinkle Fries","Crinkle fries tossed in orange peri peri, with orange mayo.",169],
+ ["Burger","O Paneer Gochujang Burger","Paneer patty brushed with orange gochujang and sriracha mayo.",219],
+ ["Croissant","Orange Glaze Croissant","Croissant with sweet-spicy orange marmalade and fresh orange.",299],
+ ["Cooler","Orange Basil Smash","Freshly squeezed orange juice, basil cordial and ginger ale.",249],
+ ["Dessert","Orange Sorbet","Icy sorbet of 100% pure Valencia orange juice.",249]
 ];
-
-const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-document.getElementById('sigs').innerHTML=SIGS.map(s=>`
- <article class="sig"><span class="k">${s[0]==='Signature'?'★ ':''}${s[0]}</span><h3>${esc(s[1])}</h3><p>${esc(s[2])}</p><span class="pair">↗ pairs with ${esc(s[4])}</span><span class="pr">₹${s[3]}</span></article>`).join('');
+document.getElementById('sigs').innerHTML=PICKS.map(s=>`
+ <article class="sig"><span class="k">${esc(s[0])}</span><h3>${esc(s[1])}</h3><p>${esc(s[2])}</p><span class="pr">₹${s[3]}</span></article>`).join('');
 
 const tabs=document.getElementById('tabs'),body=document.getElementById('menu-body');
 tabs.innerHTML=`<button class="tab" role="tab" aria-selected="true" data-id="all">All</button>`+
@@ -451,11 +457,7 @@ tabs.innerHTML=`<button class="tab" role="tab" aria-selected="true" data-id="all
 body.innerHTML=MENU.map(c=>`
 <div class="cat" data-id="${c.id}">
  <div class="cat-h"><span class="n">${c.n}</span><h3>${esc(c.t)}</h3>${c.sub?`<p>${esc(c.sub)}</p>`:''}</div>
- <div class="items">${c.items.map(i=>{
-  const f=i[3]||'';
-  return `<div class="item"><div class="row"><span class="nm">${f.includes('s')?'<span class="star">★</span> ':''}${esc(i[0])}${f.includes('o')?'<span class="only">Only here</span>':''}</span><span class="dots"></span><span class="p">₹${i[1]}</span></div>${i[2]?`<div class="d">${esc(i[2])}</div>`:''}${i[4]?`<div class="m">↗ pairs with ${esc(i[4])}</div>`:''}</div>`}).join('')}</div>
- ${c.box?`<div class="box">${c.box.map(r=>`<div class="r"><b>${esc(r[0])}</b><span>${esc(r[1])}</span></div>`).join('')}</div>`:''}
- ${c.note?`<p class="note">${c.note}</p>`:''}
+ <div class="items">${c.items.map(i=>`<div class="item"><div class="row"><span class="nm">${esc(i[0])}</span><span class="dots"></span><span class="p">₹${i[1]}</span></div>${i[2]?`<div class="d">${esc(i[2])}</div>`:''}${i[3]?`<div class="m">${esc(i[3])}</div>`:''}</div>`).join('')}</div>
 </div>`).join('');
 
 tabs.addEventListener('click',e=>{
@@ -463,7 +465,6 @@ tabs.addEventListener('click',e=>{
  tabs.querySelectorAll('.tab').forEach(t=>t.setAttribute('aria-selected',t===b));
  const id=b.dataset.id;
  body.querySelectorAll('.cat').forEach(c=>c.hidden=!(id==='all'||c.dataset.id===id));
- document.getElementById('byd').hidden=!(id==='all'||id==='coffee'||id==='matcha');
 });
 </script>
 </body>
