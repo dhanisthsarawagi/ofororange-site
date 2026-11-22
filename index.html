@@ -3,498 +3,482 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>O for Orange — Juice · Coffee · Food, Surat</title>
-<meta name="description" content="O for Orange, Surat: a café built around one fruit. Orange mayo, orange peri peri fries, marmalade croissants, fresh Valencia juice and citrus coffee. Epic Eats Food Court, 7 AM to 1:30 AM.">
-<meta property="og:title" content="O for Orange — Everything starts with an O">
+<title>O for Orange | Juice · Coffee · Food, Surat</title>
+<meta name="description" content="O for Orange, Surat: a café built around one fruit. Orange mayo, orange peri peri fries, marmalade croissants, fresh Valencia juice and citrus coffee. Epic Eats Food Court, open 7 AM to 1:30 AM.">
+<meta property="og:title" content="O for Orange | Everything starts with an O">
 <meta property="og:description" content="A café built around one fruit. Fresh Valencia juice, orange peri peri fries, citrus coffee. Surat.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ofororange.com/">
 <meta property="og:image" content="https://ofororange.com/img/fries.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#E8651A">
+<meta name="theme-color" content="#dc5a17">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"O for Orange","url":"https://ofororange.com/","image":"https://ofororange.com/img/fries.jpg","telephone":"+918490936644","servesCuisine":["Coffee","Juice","Vegetarian"],"address":{"@type":"PostalAddress","streetAddress":"O For Orange, Epic Eats Food Court, opp. Jolly Party Plot","addressLocality":"Surat","addressRegion":"Gujarat","postalCode":"395007","addressCountry":"IN"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"01:30"},"sameAs":["https://instagram.com/ofororange._"]}
 </script>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23E8651A'/%3E%3Cellipse cx='32' cy='36' rx='10' ry='14' fill='none' stroke='%23fff' stroke-width='5'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23dc5a17'/%3E%3Cellipse cx='32' cy='36' rx='10' ry='14' fill='none' stroke='%23fff' stroke-width='5'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,600;1,9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
 <style>
 :root{
-  --orange:#E8651A;--orange-l:#ff9440;--orange-d:#b83f05;--cream:#FAF3E8;--paper:#fffaf1;
-  --ink:#1b140d;--mut:#6b5a48;--line:#e3d5bf;--leaf:#6faa1c;
-  --serif:"Fraunces",Georgia,serif;--sans:"Inter",system-ui,sans-serif;
-}
-@media (prefers-color-scheme:dark){
-  :root{--cream:#16100a;--paper:#1f160d;--ink:#fbf1e3;--mut:#bba68e;--line:#3a2d20}
+  --ember:oklch(0.18 0.025 50);
+  --ember-2:oklch(0.25 0.04 48);
+  --orange:oklch(0.66 0.205 44);
+  --orange-deep:oklch(0.6 0.21 41);
+  --glow:oklch(0.82 0.17 70);
+  --cream:oklch(0.965 0.022 85);
+  --cream-2:oklch(0.93 0.035 80);
+  --ink:oklch(0.22 0.035 50);
+  --mut:oklch(0.46 0.035 55);
+  --soft:oklch(0.82 0.03 70);
+  --leaf:oklch(0.74 0.19 128);
+  --serif:"Young Serif",Georgia,serif;
+  --sans:"Hanken Grotesk",system-ui,sans-serif;
+  --gut:clamp(20px,5vw,72px);
+  --out:cubic-bezier(.16,1,.3,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit}
+body{background:var(--ember);color:var(--cream);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%}
-.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
-.eyebrow{font:600 .78rem/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--orange)}
-h1,h2,h3{font-family:var(--serif);font-optical-sizing:auto}
-h2{font-weight:800;font-size:clamp(2.2rem,6vw,4.4rem);line-height:1;letter-spacing:-.02em;margin-top:14px}
-h2 em,h1 em{font-style:italic;font-weight:800;color:var(--orange)}
-.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--mut);max-width:34rem;margin-top:16px}
-
-/* chrome */
-.bar{position:fixed;left:0;top:0;height:4px;width:100%;background:var(--orange);transform-origin:0 50%;transform:scaleX(0);z-index:60}
-header{position:fixed;top:0;left:0;right:0;z-index:50;height:68px;display:flex;align-items:center;transition:background .3s,box-shadow .3s}
-header.solid{background:color-mix(in srgb,var(--cream) 88%,transparent);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
-header .wrap{width:100%;display:flex;align-items:center;justify-content:space-between}
-.logo{height:40px;width:auto}
-.hbtn{font:600 .78rem var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;background:var(--orange);color:#fff;padding:11px 20px;border-radius:999px;transition:.2s}
-.hbtn:hover{background:var(--orange-d)}
-.rail{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;gap:14px}
-.rail a{display:block;width:10px;height:10px;border-radius:50%;background:currentColor;opacity:.28;transition:.3s;position:relative;color:var(--ink)}
-.rail a.on{opacity:1;background:var(--orange);transform:scale(1.5)}
-.rail a span{position:absolute;right:20px;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 .7rem var(--sans);letter-spacing:.14em;text-transform:uppercase;opacity:0;pointer-events:none;transition:.25s;background:var(--ink);color:var(--cream);padding:4px 9px;border-radius:6px}
-.rail a:hover span{opacity:1}
-@media(max-width:900px){.rail{display:none}}
-
-/* reveal */
-.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
-.rv.in{opacity:1;transform:none}
-
-/* hero */
-.hero{position:relative;min-height:100svh;display:grid;align-items:center;padding:110px 0 70px;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
-.hero h1{font-weight:900;font-size:clamp(3.2rem,8.6vw,7rem);line-height:.92;letter-spacing:-.03em;margin:22px 0 24px}
-.hero .lead{font-size:clamp(1.05rem,1.8vw,1.3rem)}
-.cue{display:inline-flex;align-items:center;gap:12px;margin-top:34px;font:600 .8rem var(--sans);letter-spacing:.2em;text-transform:uppercase;text-decoration:none}
-.cue i{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:2px solid var(--orange);color:var(--orange);font-style:normal;animation:bob 1.8s ease-in-out infinite}
-@keyframes bob{50%{transform:translateY(7px)}}
-.where{margin-top:26px;font-size:.88rem;color:var(--mut)}
-.hero-art{position:relative;display:grid;place-items:center;min-height:min(70vh,640px)}
-.disc{position:absolute;width:min(92%,520px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--orange-l),var(--orange) 55%,var(--orange-d));box-shadow:0 50px 100px -40px rgba(232,101,26,.7)}
-.disc::before,.disc::after{content:"";position:absolute;inset:-9%;border-radius:50%;border:2px solid var(--orange);opacity:.25}
-.disc::after{inset:-20%;opacity:.12}
-.mascot{position:relative;height:min(74vh,660px);width:auto;filter:drop-shadow(0 24px 30px rgba(120,40,0,.35));will-change:transform}
-.float{position:absolute;border-radius:50%;background:var(--orange);opacity:.9;animation:fl 7s ease-in-out infinite}
-.float.a{width:22px;height:22px;left:6%;top:18%}.float.b{width:12px;height:12px;right:8%;top:30%;animation-delay:-2s;background:var(--leaf)}
-.float.c{width:30px;height:30px;right:14%;bottom:12%;animation-delay:-4s}
-@keyframes fl{50%{transform:translateY(-18px)}}
-@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;text-align:center}.hero .lead{margin-inline:auto}.hero-art{order:-1;min-height:46vh}.mascot{height:44vh}.cue{margin-inline:auto}}
-
-/* pinned scenes */
+a{color:inherit}
+.eyebrow{font:600 .74rem/1 var(--sans);letter-spacing:.34em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.02em}
 .pin{position:relative}
 .pin>.sticky{position:sticky;top:0;height:100svh;overflow:hidden}
 
-/* chapter 1: orange wipe */
-.wipe{height:320vh;background:var(--cream)}
-.wipe .sun{position:absolute;left:50%;top:50%;width:130vmax;height:130vmax;margin:-65vmax 0 0 -65vmax;border-radius:50%;background:radial-gradient(circle at 42% 38%,var(--orange-l),var(--orange) 50%,var(--orange-d));transform:scale(var(--s,.02));will-change:transform}
-.layer{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;text-align:center;padding:90px 22px 40px;will-change:transform,opacity}
-.l1 .lead{margin-inline:auto}
-.l1w{color:#fff;clip-path:circle(0px at 50% 50%);pointer-events:none}
-.l1w .eyebrow,.l1w h2,.l1w h2 em{color:#fff}
-.l1w .lead{color:#fff3e6}
-.l2{color:#fff}
-.l2 h2{color:#fff;max-width:14ch;margin-inline:auto}
-.l2 h2 em{color:#1b140d}
-.stats{display:grid;grid-template-columns:repeat(3,minmax(0,200px));gap:clamp(14px,3vw,40px);margin-top:42px}
-.stat{will-change:transform,opacity}
-.stat b{display:block;font:900 clamp(1.8rem,5vw,3.2rem)/1 var(--serif);letter-spacing:-.02em}
-.stat span{display:block;margin-top:8px;font-size:.88rem;opacity:.92}
-@media(max-width:620px){.stats{grid-template-columns:1fr;gap:18px}.stat span{margin-top:2px}}
+/* chrome */
+.bar{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--glow);transform-origin:0 50%;transform:scaleX(0);z-index:80}
+header{position:fixed;top:0;left:0;right:0;z-index:70;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--gut);pointer-events:none}
+header>*{pointer-events:auto}
+.lg{position:relative;display:block;width:150px;aspect-ratio:1763/560}
+.lg img{position:absolute;inset:0;width:100%;height:100%;transition:opacity .35s}
+.lg .c{opacity:0}
+header.hc .lg .c{opacity:1}header.hc .lg .w{opacity:0}
+.hbtn{font:700 .72rem var(--sans);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;background:var(--cream);color:var(--ink);padding:12px 22px;border-radius:999px;transition:background .3s,color .3s,transform .3s var(--out)}
+.hbtn:hover{transform:translateY(-2px)}
+header.hc .hbtn{background:var(--ink);color:var(--cream)}
 
-/* chapter 2: builds */
-.builds{height:560vh;background:var(--orange);color:#fff}
-.builds .sticky{display:flex;flex-direction:column;background:radial-gradient(120% 80% at 50% 0%,var(--orange-l) 0%,var(--orange) 45%,var(--orange-d) 100%)}
-.builds .eyebrow{color:#fff;opacity:.9}
-.builds h2 em{color:#1b140d}
-.builds .lead{color:#fff3e6}
-.b-head{padding:92px 22px 0}
-.b-track{flex:1;display:flex;align-items:center;gap:var(--gap,24px);will-change:transform;padding-left:calc(50vw - var(--cw,360px)/2)}
-.bcard{flex:none;width:var(--cw,360px);height:min(56vh,470px);background:var(--paper);color:var(--ink);border-radius:28px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 40px 70px -30px rgba(70,20,0,.7);will-change:transform,opacity}
-.bcard .ph{height:50%;overflow:hidden;position:relative}
-.bcard .ph img{width:100%;height:100%;object-fit:cover}
-.bcard .ph .n{position:absolute;left:16px;top:14px;background:#fff;color:var(--orange);font:700 .72rem var(--sans);letter-spacing:.18em;padding:6px 10px;border-radius:999px}
-.bcard .bd{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1;min-height:0}
-.bcard h3{font-weight:800;font-size:clamp(1.3rem,2.4vw,1.7rem);line-height:1.1;letter-spacing:-.01em}
-.bcard p{font-size:.9rem;color:var(--mut);line-height:1.45}
-.bcard .dish{margin-top:auto;font-weight:600;font-size:.84rem;color:var(--orange);border-top:1px dashed var(--line);padding-top:10px}
-.bcard.plain .ph{background:radial-gradient(circle at 40% 35%,var(--orange-l),var(--orange) 60%,var(--orange-d));display:grid;place-items:center}
-.bcard.plain .ph b{font:900 7rem/1 var(--serif);color:#fff;text-shadow:0 8px 24px rgba(90,25,0,.4)}
-.b-foot{display:flex;align-items:center;gap:18px;padding:0 22px 34px;font:600 .8rem var(--sans);letter-spacing:.18em}
-.b-prog{flex:1;height:3px;background:rgba(255,255,255,.3);border-radius:3px;overflow:hidden}
-.b-prog i{display:block;height:100%;background:#fff;transform-origin:0 50%;transform:scaleX(0)}
-@media(max-width:640px){.b-head{padding-top:84px}.b-head h2{font-size:clamp(2rem,9vw,2.6rem)}.bcard{height:min(54vh,440px)}}
+/* ---------- HERO: the O portal ---------- */
+.portal{height:300vh;background:var(--orange-deep)}
+.portal .sticky{--cx:70vw;--cy:52vh;--rx:212px;--ry:272px;background:radial-gradient(70% 90% at 28% 30%,var(--glow) 0%,var(--orange) 38%,var(--orange-deep) 100%)}
+.portal .orbit{position:absolute;left:var(--cx);top:var(--cy);border-radius:50%;border:1.5px solid oklch(0.98 0.02 85 / .35);transform:translate(-50%,-50%)}
+.portal .orbit.a{width:calc(var(--rx)*2 + 90px);height:calc(var(--ry)*2 + 90px)}
+.portal .orbit.b{width:calc(var(--rx)*2 + 220px);height:calc(var(--ry)*2 + 220px);opacity:.5}
+.win{position:absolute;inset:0;clip-path:ellipse(var(--rx) var(--ry) at var(--cx) var(--cy))}
+.win img{width:100%;height:100%;object-fit:cover;object-position:50% 52%;will-change:transform}
+.ring{position:absolute;left:calc(var(--cx) - var(--rx));top:calc(var(--cy) - var(--ry));width:calc(var(--rx)*2);height:calc(var(--ry)*2);border:3px solid var(--cream);border-radius:50%;pointer-events:none}
+.dim{position:absolute;inset:0;background:var(--ember);opacity:0;pointer-events:none}
+.pline{position:absolute;left:0;right:0;top:50%;padding:0 var(--gut);text-align:center;font:400 clamp(2.6rem,7.6vw,7.4rem)/1 var(--serif);color:var(--cream);letter-spacing:-.02em;opacity:0;pointer-events:none;text-shadow:0 4px 60px oklch(0.15 0.05 40 / .7);will-change:transform,opacity}
+.pline b{font-weight:400;color:var(--glow)}
+.copy{position:absolute;left:var(--gut);top:50%;transform:translateY(-50%);width:min(46vw,640px);will-change:transform,opacity}
+.copy .eyebrow{color:var(--ember)}
+.copy h1{font-size:clamp(3.4rem,8.4vw,8.4rem);line-height:.92;margin:26px 0 28px;color:var(--cream);text-shadow:0 2px 40px oklch(0.45 0.18 40 / .35)}
+.copy h1 b{font-weight:400;color:var(--ember)}
+.copy p{font-size:clamp(1rem,1.5vw,1.2rem);max-width:30ch;color:var(--ember);font-weight:500}
+.cue{display:flex;align-items:center;gap:14px;margin-top:38px;font:700 .7rem var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--ember)}
+.cue i{width:56px;height:2px;background:var(--ember);transform-origin:0 50%;animation:cue 2.4s var(--out) infinite}
+@keyframes cue{0%{transform:scaleX(0)}60%,100%{transform:scaleX(1)}}
+.peek{position:absolute;right:max(1vw,0px);bottom:-9vh;height:58vh;width:auto;filter:drop-shadow(0 26px 30px oklch(0.3 0.12 40 / .45));will-change:transform,opacity}
+@media(max-width:860px){
+  .portal .sticky{--cx:50vw;--cy:36vh;--rx:160px;--ry:205px}
+  .copy{top:auto;bottom:7vh;transform:none;width:calc(100% - var(--gut)*2)}
+  .copy h1{font-size:clamp(2.8rem,13.5vw,4.6rem);margin:16px 0 14px}
+  .copy p{max-width:34ch;font-size:1rem}
+  .cue{margin-top:20px}
+  .peek{height:25vh;right:-2vw;bottom:34vh;opacity:.0}
+}
 
-/* chapter 3: coffee */
-.coffee{height:420vh;background:#1b140d;color:#FAF3E8}
-.coffee .sticky{background:radial-gradient(80% 70% at 78% 50%,#3a1e0d 0%,#1b140d 70%)}
-.coffee .sticky>.wrap{height:100%;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding-top:70px}
-.coffee .lead{color:#cdbca6}
-.big{font:900 clamp(5rem,16vw,12rem)/.8 var(--serif);color:transparent;-webkit-text-stroke:2px rgba(232,101,26,.55);margin-top:30px;letter-spacing:-.04em}
-.stack{position:relative;height:min(58vh,470px);width:min(100%,460px);margin-inline:auto}
-.dcard{position:absolute;inset:0;border-radius:30px;padding:30px;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;will-change:transform,opacity;border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 70px -30px rgba(0,0,0,.8)}
-.dcard:nth-child(1){background:linear-gradient(160deg,#ff9440,#E8651A 55%,#9c3604)}
-.dcard:nth-child(2){background:linear-gradient(160deg,#f2d6b0,#d9894c 55%,#6a3a1c)}
-.dcard:nth-child(3){background:linear-gradient(160deg,#ffb05a,#e8651a 50%,#7a2e08)}
-.dcard:nth-child(4){background:linear-gradient(160deg,#a8d36a,#5f9a2a 55%,#2c5410)}
-.dcard .tg{align-self:flex-start;font:600 .7rem var(--sans);letter-spacing:.22em;text-transform:uppercase;background:rgba(255,255,255,.22);padding:6px 12px;border-radius:999px}
-.dcard h3{font-weight:900;font-size:clamp(1.9rem,4vw,2.7rem);line-height:1;letter-spacing:-.02em;color:#fff}
-.dcard p{font-size:.95rem;color:rgba(255,255,255,.92)}
-.dcard .pr{font:900 1.8rem var(--serif);color:#fff}
-.dcard .top{position:absolute;left:30px;top:26px;right:30px;display:flex;justify-content:space-between;align-items:center}
-.cnt{font:600 .8rem var(--sans);letter-spacing:.2em;color:#cdbca6;margin-top:24px}
-@media(max-width:820px){.coffee .sticky>.wrap{grid-template-columns:1fr;gap:10px;align-content:center;padding-top:80px}.big{display:none}.stack{height:min(48vh,400px)}}
+/* ---------- CHAPTER 1: the fruit ---------- */
+.fruit{height:340vh;background:var(--ember)}
+.fruit .sticky{display:grid;grid-template-columns:1.15fr .85fr;gap:4vw;align-items:center;padding:0 var(--gut);background:radial-gradient(60% 70% at 78% 55%,oklch(0.3 0.08 45) 0%,var(--ember) 70%)}
+.fruit .eyebrow{color:var(--glow)}
+.fruit h2{font-size:clamp(3rem,7.4vw,7.6rem);line-height:.98;margin-top:26px}
+.wd{display:inline-block;opacity:.16;will-change:opacity}
+.wd.o{color:var(--glow)}
+.facts{display:flex;gap:clamp(18px,3vw,48px);margin-top:40px;flex-wrap:wrap}
+.fact{max-width:17ch;font-size:.95rem;color:var(--soft);will-change:opacity,transform}
+.fact b{display:block;font:400 1.5rem var(--serif);color:var(--cream);margin-bottom:4px}
+.fx-arch{position:relative;justify-self:center;width:min(100%,430px)}
+.arch{position:relative;aspect-ratio:3/4;border-radius:999px 999px 28px 28px;overflow:hidden;box-shadow:0 60px 90px -40px oklch(0.1 0.04 40 / .9)}
+.arch img{position:absolute;left:0;top:-9%;width:100%;height:118%;object-fit:cover;will-change:transform}
+.fx-arch::before,.fx-arch::after{content:"";position:absolute;border:1.5px solid var(--orange);border-radius:999px 999px 36px 36px;opacity:.55}
+.fx-arch::before{inset:-16px}
+.fx-arch::after{inset:-34px;opacity:.25}
+@media(max-width:860px){.fruit .sticky{grid-template-columns:1fr;align-content:center;gap:26px}.fx-arch{width:min(56vw,260px);order:-1}.fruit h2{font-size:clamp(2.4rem,11vw,3.6rem)}.fact{max-width:none}}
 
-/* chapter 4: gallery */
-.reel{position:relative;overflow:hidden;color:#fff;padding:96px 0 80px;background:radial-gradient(120% 90% at 50% 0%,var(--orange-l) 0%,var(--orange) 45%,var(--orange-d) 100%)}
-.reel::before,.reel::after{content:"";position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,.22);pointer-events:none;left:50%;top:50%;transform:translate(-50%,-50%)}
-.reel::before{width:720px;height:720px}.reel::after{width:1080px;height:1080px;border-color:rgba(255,255,255,.12)}
-.reel .wrap{position:relative;z-index:1;text-align:center}
-.reel .eyebrow{color:#fff;opacity:.9}.reel h2 em{color:#1b140d}
-.stage{position:relative;height:540px;margin-top:34px;touch-action:pan-y;user-select:none;-webkit-user-select:none;outline:none}
-.slide{position:absolute;left:50%;top:0;width:min(320px,62vw);aspect-ratio:2/3;margin-left:calc(min(320px,62vw)/-2);border-radius:26px;overflow:hidden;background:#1b140d;box-shadow:0 30px 60px -20px rgba(60,20,0,.7);transition:transform .7s cubic-bezier(.22,.8,.24,1),opacity .7s,filter .7s;will-change:transform}
-.slide img{width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
-.slide.is-active{box-shadow:0 40px 80px -20px rgba(60,20,0,.85),0 0 0 6px rgba(255,243,230,.9)}
-.cap{margin-top:22px;min-height:76px}
-.cap b{display:block;font:italic 800 clamp(1.5rem,3.4vw,2.2rem)/1.15 var(--serif)}
-.cap span{display:block;margin-top:6px;color:#fff3e6;opacity:.92}
-.ctrl{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:14px}
-.arrow{width:48px;height:48px;border-radius:50%;border:2px solid #fff;background:transparent;color:#fff;font-size:1.3rem;cursor:pointer;transition:.2s;display:grid;place-items:center}
-.arrow:hover,.arrow:focus-visible{background:#fff;color:var(--orange-d)}
-.dots{display:flex;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;border:0;background:rgba(255,255,255,.4);cursor:pointer;padding:0;transition:.25s}
-.dot[aria-current=true]{background:#fff;width:28px;border-radius:6px}
-@media(max-width:640px){.stage{height:470px}.reel::before{width:520px;height:520px}.reel::after{width:760px;height:760px}}
+/* ---------- CHAPTER 2: built around orange (carousel) ---------- */
+.builds{height:640vh}
+.builds .sticky{display:flex;flex-direction:column;background:#db5718;color:var(--cream)}
+.b-top{flex:none;padding:88px var(--gut) 0;display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
+.b-top .eyebrow{color:var(--ember)}
+.b-top h2{font-size:clamp(2.2rem,4.8vw,4.6rem);line-height:.95;margin-top:14px}
+.b-top .cnt{font:400 clamp(2.2rem,4.8vw,4.6rem)/.95 var(--serif);color:var(--ember);font-variant-numeric:tabular-nums;white-space:nowrap}
+.b-top .cnt small{font-size:.35em;opacity:.6}
+.b-track{flex:1;min-height:0;display:flex;align-items:center;gap:var(--gap,28px);padding-left:calc(50vw - var(--cw,400px)/2);will-change:transform}
+.pc{position:relative;flex:none;width:var(--cw,400px);height:min(50vh,520px);border-radius:999px 999px 28px 28px;overflow:hidden;background:var(--ember-2);box-shadow:0 50px 80px -40px oklch(0.15 0.06 40 / .85);will-change:transform,opacity}
+.pc img{position:absolute;left:-12%;top:0;width:124%;height:100%;object-fit:cover;will-change:transform}
+.pc::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,oklch(0.14 0.03 45 / .92) 0%,oklch(0.14 0.03 45 / .55) 34%,transparent 62%)}
+.pc .tx{position:absolute;left:0;right:0;bottom:0;padding:0 26px 26px;z-index:2}
+.pc .no{display:block;font:600 .72rem var(--sans);letter-spacing:.3em;color:var(--glow);margin-bottom:10px}
+.pc h3{font-size:clamp(1.6rem,2.8vw,2.2rem);line-height:1.05;color:var(--cream)}
+.pc p{margin-top:8px;font-size:.92rem;color:var(--soft);line-height:1.45}
+.pc .try{margin-top:12px;font:600 .68rem var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--glow)}
+.pc.plain{background:radial-gradient(circle at 40% 30%,oklch(0.8 0.17 65),var(--orange) 55%,oklch(0.5 0.19 38))}
+.pc.plain .big{position:absolute;left:0;right:0;top:11%;text-align:center;font:400 clamp(9rem,22vw,15rem)/1 var(--serif);color:var(--cream);text-shadow:0 14px 40px oklch(0.4 0.17 38 / .5)}
+.b-nav{flex:none;display:flex;gap:8px;overflow-x:auto;padding:6px var(--gut) 26px;scrollbar-width:none}
+.b-nav::-webkit-scrollbar{display:none}
+.b-nav button{flex:none;cursor:pointer;font:700 .68rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ember);background:transparent;border:1.5px solid oklch(0.18 0.025 50 / .5);padding:10px 16px;border-radius:999px;transition:background .25s,color .25s,border-color .25s}
+.b-nav button[aria-current=true]{background:var(--ember);color:var(--cream);border-color:var(--ember)}
+@media(max-width:700px){.pc{height:min(48vh,460px)}.b-top{padding-top:84px}.b-top h2{font-size:clamp(2rem,9vw,2.8rem)}.b-top .cnt{font-size:clamp(2rem,9vw,2.8rem)}}
 
-/* chapter 5: glance */
-.glance{padding:110px 0}
-.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.chip{display:flex;align-items:baseline;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:12px 20px;transition:.25s}
-.chip:hover{border-color:var(--orange);transform:translateY(-3px)}
-.chip b{font:800 1.05rem var(--serif)}
-.chip span{font-size:.82rem;color:var(--orange);font-weight:600}
-.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font:600 .82rem var(--sans);letter-spacing:.16em;text-transform:uppercase;padding:15px 26px;border-radius:999px;transition:.2s}
-.btn:hover{background:var(--orange-d);transform:translateY(-2px)}
+/* ---------- CHAPTER 3: coffee ---------- */
+.coffee{height:420vh;background:var(--cream)}
+.coffee .sticky{display:grid;grid-template-columns:1.05fr .95fr;gap:3vw;align-items:center;padding:60px var(--gut) 0;color:var(--ink);background:radial-gradient(70% 80% at 80% 50%,var(--cream-2),var(--cream) 70%)}
+.coffee .eyebrow{color:var(--orange-deep)}
+.names{list-style:none;margin-top:26px}
+.names li{position:relative;padding-left:clamp(2.6rem,4.4vw,4.2rem);font:400 clamp(2.4rem,5.6vw,5.4rem)/1.04 var(--serif);letter-spacing:-.02em;color:transparent;-webkit-text-stroke:1.5px oklch(0.22 0.035 50 / .38);transition:color .5s var(--out),-webkit-text-stroke-color .5s;cursor:pointer}
+.names li small{position:absolute;left:0;top:.95em;font:700 .72rem var(--sans);letter-spacing:.2em;-webkit-text-stroke:0;color:oklch(0.22 0.035 50 / .45);transition:color .4s}
+.names li.on{color:var(--orange-deep);-webkit-text-stroke-color:var(--orange-deep)}
+.names li.on small{color:var(--orange-deep)}
+.desc{margin-top:26px;max-width:40ch;font-size:clamp(1rem,1.5vw,1.2rem);color:var(--mut);min-height:5.2em;transition:opacity .4s,transform .5s var(--out)}
+.desc.sw{opacity:0;transform:translateY(10px)}
+.desc b{display:block;margin-bottom:6px;font:700 .7rem var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--orange-deep)}
+.disc{position:relative;justify-self:center;width:min(78vw,560px);aspect-ratio:1}
+.disc .ringtext{position:absolute;inset:0;width:100%;height:100%;will-change:transform}
+.disc .ringtext text{font:700 22px var(--sans);letter-spacing:.34em;fill:var(--orange-deep);text-transform:uppercase}
+.disc .core{position:absolute;inset:14%;border-radius:50%;overflow:hidden;box-shadow:0 50px 80px -40px oklch(0.4 0.15 40 / .6)}
+.disc .core img{width:100%;height:100%;object-fit:cover;will-change:transform}
+@media(max-width:860px){.coffee .sticky{grid-template-columns:1fr;align-content:center;gap:10px;padding-top:80px}.disc{width:min(52vw,260px);order:-1}.names li{font-size:clamp(1.9rem,8.4vw,3rem)}.desc{min-height:6.4em;margin-top:14px}}
 
-/* chapter 6: visit */
-.visit{position:relative;background:var(--orange);color:#fff;overflow:hidden;padding:100px 0 0}
-.visit .eyebrow{color:#fff;opacity:.9}
-.visit h2 em{color:#1b140d}
-.visit .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:end}
-.v-info{padding-bottom:90px}
-.v-card{margin-top:26px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:22px;padding:24px 26px;font-size:1.05rem}
-.v-card+.v-card{margin-top:14px}
-.v-card h3{font:600 .72rem var(--sans);letter-spacing:.26em;text-transform:uppercase;opacity:.85;margin-bottom:8px}
-.vbtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-.vbtn{display:inline-block;background:#1b140d;color:#fff;font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:12px 20px;border-radius:999px;text-decoration:none;transition:.2s}
-.vbtn:hover{background:#000;transform:translateY(-2px)}
-.v-art{display:grid;place-items:end center}
-.v-art img{height:min(70vh,640px);width:auto;filter:drop-shadow(0 20px 30px rgba(90,25,0,.4))}
-@media(max-width:860px){.visit .wrap{grid-template-columns:1fr}.v-info{padding-bottom:10px}.v-art img{height:46vh}}
-footer{background:#1b140d;color:#bba68e;padding:34px 0;font-size:.85rem}
-footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+/* ---------- CHAPTER 4: gallery ---------- */
+.gal{background:var(--ember);padding:clamp(80px,14vh,150px) 0;overflow:hidden}
+.gal .head{padding:0 var(--gut) clamp(30px,6vh,60px)}
+.gal .eyebrow{color:var(--glow)}
+.gal h2{font-size:clamp(3rem,9vw,9rem);line-height:.92;margin-top:20px}
+.gal h2 b{font-weight:400;color:var(--orange)}
+.row{overflow:visible;margin-top:clamp(16px,3vw,28px)}
+.strip{display:flex;gap:clamp(14px,2vw,26px);width:max-content;will-change:transform}
+.tile{width:clamp(190px,23vw,330px);aspect-ratio:3/4;overflow:hidden;background:var(--ember-2);flex:none;border-radius:999px 999px 22px 22px}
+.row.r2 .tile{border-radius:22px 22px 999px 999px}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--out)}
+.tile:hover img{transform:scale(1.07)}
 
-/* reduced motion: no pinning, static story */
+/* ---------- CHAPTER 5: more ---------- */
+.more{background:var(--cream);color:var(--ink);padding:clamp(90px,16vh,170px) 0 clamp(80px,12vh,130px);overflow:hidden}
+.more .head{padding:0 var(--gut)}
+.more .eyebrow{color:var(--orange-deep)}
+.more h2{font-size:clamp(2.4rem,6vw,5.6rem);line-height:.98;margin-top:18px;max-width:14ch}
+.more h2 b{font-weight:400;color:var(--orange-deep)}
+.mq{margin-top:clamp(30px,6vh,60px)}
+.mq .line{display:flex;width:max-content;font:400 clamp(3.4rem,10vw,10rem)/1.02 var(--serif);letter-spacing:-.03em;white-space:nowrap;will-change:transform}
+.mq .line span{padding-right:.35em;color:var(--ink)}
+.mq .line span:nth-child(even){color:transparent;-webkit-text-stroke:2px var(--orange-deep)}
+.mq .line:nth-child(2) span{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.mq .line:nth-child(2) span:nth-child(even){color:var(--orange-deep);-webkit-text-stroke:0}
+.cta-row{padding:0 var(--gut);margin-top:clamp(34px,6vh,60px);display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.cta-row p{max-width:34ch;color:var(--mut)}
+.btn{display:inline-block;background:var(--orange-deep);color:var(--cream);text-decoration:none;font:700 .74rem var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:17px 30px;border-radius:999px;transition:transform .35s var(--out),background .3s}
+.btn:hover{transform:translateY(-3px);background:var(--ember)}
+
+/* ---------- VISIT ---------- */
+.visit{position:relative;background:radial-gradient(80% 90% at 20% 20%,var(--glow) 0%,var(--orange) 42%,var(--orange-deep) 100%);color:var(--ember);overflow:hidden;padding:clamp(90px,15vh,160px) var(--gut) 0}
+.visit .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3vw;align-items:end}
+.visit .eyebrow{color:var(--ember)}
+.visit h2{font-size:clamp(3.6rem,10vw,10rem);line-height:.9;margin:20px 0 34px;color:var(--cream)}
+.visit h2 b{font-weight:400;color:var(--ember)}
+.info{display:grid;gap:clamp(18px,3vw,30px);padding-bottom:clamp(60px,10vh,110px)}
+.info div{border-top:1.5px solid oklch(0.18 0.025 50 / .45);padding-top:16px}
+.info h3{font:700 .7rem var(--sans);letter-spacing:.3em;text-transform:uppercase;margin-bottom:8px;opacity:.8}
+.info p{font-size:clamp(1.1rem,1.8vw,1.45rem);font-weight:500;line-height:1.4}
+.vb{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.vb a{display:inline-block;background:var(--ember);color:var(--cream);text-decoration:none;font:700 .7rem var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:14px 22px;border-radius:999px;transition:transform .35s var(--out),background .3s}
+.vb a:hover{transform:translateY(-3px);background:#000}
+.vb a.ghost{background:transparent;color:var(--ember);border:1.5px solid var(--ember)}
+.vb a.ghost:hover{background:var(--ember);color:var(--cream)}
+.vart{position:relative;display:grid;place-items:end center}
+.vart::before{content:"";position:absolute;width:min(100%,520px);aspect-ratio:1;border-radius:50%;bottom:-6%;background:oklch(0.98 0.02 85 / .16);border:1.5px solid oklch(0.98 0.02 85 / .4)}
+.vart img{position:relative;height:min(72vh,660px);width:auto;filter:drop-shadow(0 26px 30px oklch(0.3 0.12 40 / .4))}
+@media(max-width:860px){.visit .grid{grid-template-columns:1fr}.vart img{height:46vh}.info{padding-bottom:20px}}
+footer{background:var(--ember);padding:clamp(50px,8vh,90px) var(--gut) 34px;text-align:center}
+footer .big{width:min(1000px,100%);margin:0 auto}
+footer .legal{margin-top:40px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.82rem;color:var(--soft);text-align:left}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1s var(--out),transform 1s var(--out);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+/* reduced motion: static story */
 .rm{scroll-behavior:auto}
-.rm .rv{opacity:1;transform:none;transition:none}
+.rm .rv,.rm .wd,.rm .fact,.rm .pline{opacity:1!important;transform:none!important;transition:none}
 .rm .pin{height:auto!important}
-.rm .pin>.sticky{position:static;height:auto;overflow:visible}
-.rm .wipe{background:var(--orange)}.rm .wipe .sun,.rm .l1,.rm .l1w{display:none}
-.rm .layer{position:static;padding:90px 22px}
-.rm .stat,.rm .l2{opacity:1!important;transform:none!important}
-.rm .b-track{overflow-x:auto;scroll-snap-type:x mandatory;transform:none!important;padding:30px 22px;flex:none}
-.rm .bcard{scroll-snap-align:center;opacity:1!important;transform:none!important}
-.rm .coffee .sticky>.wrap{padding:80px 22px}
-.rm .stack{height:auto;display:grid;gap:16px}
-.rm .dcard{position:relative;opacity:1!important;transform:none!important;min-height:260px}
-.rm .float,.rm .cue i{animation:none}
+.rm .pin>.sticky{position:static;height:auto;min-height:100svh;overflow:visible}
+.rm .portal .sticky{min-height:100svh}
+.rm .peek{display:none}
+.rm .b-track{overflow-x:auto;scroll-snap-type:x mandatory;padding:30px var(--gut);flex:none}
+.rm .pc{scroll-snap-align:center;opacity:1!important;transform:none!important}
+.rm .names li{color:var(--orange-deep);-webkit-text-stroke-color:var(--orange-deep)}
+.rm .row,.rm .mq{overflow-x:auto}
+.rm .cue i{animation:none}
 </style>
 </head>
 <body>
 <div class="bar" id="bar"></div>
 <header id="hdr">
-  <div class="wrap">
-    <a href="#top" aria-label="O for Orange, home"><img class="logo" src="brand/logo-color.svg" alt="O for Orange" width="126" height="40"></a>
-    <a class="hbtn" href="#visit">Visit us</a>
-  </div>
+  <a class="lg" href="#top" aria-label="O for Orange, home"><img class="w" src="brand/logo-white.svg" alt="O for Orange" width="150" height="48"><img class="c" src="brand/logo-color.svg" alt="" width="150" height="48"></a>
+  <a class="hbtn" href="#visit">Find us</a>
 </header>
-<nav class="rail" id="rail" aria-label="Story chapters">
-  <a href="#top" data-t="top"><span>Start</span></a>
-  <a href="#orange"><span>The orange</span></a>
-  <a href="#builds"><span>Built around it</span></a>
-  <a href="#coffee"><span>Coffee</span></a>
-  <a href="#gallery"><span>A day in orange</span></a>
-  <a href="#more"><span>The rest</span></a>
-  <a href="#visit"><span>Visit</span></a>
-</nav>
 
-<main id="top">
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="wrap">
-    <div>
-      <span class="eyebrow rv">Juice · Coffee · Food — Surat</span>
-      <h1 class="rv" style="--d:.08s">Everything starts with an <em>O.</em></h1>
-      <p class="lead rv" style="--d:.16s">O for Orange is a café built around one fruit. Scroll down and we'll show you how.</p>
-      <a class="cue rv" style="--d:.24s" href="#orange"><i>↓</i> Follow the orange</a>
-      <p class="where rv" style="--d:.3s">Epic Eats Food Court, Surat · 7 AM – 1:30 AM</p>
+<main>
+<!-- HERO: the O portal -->
+<section class="pin portal" id="top" data-h="w">
+  <div class="sticky" id="pSticky">
+    <span class="orbit a" id="orbA" aria-hidden="true"></span><span class="orbit b" id="orbB" aria-hidden="true"></span>
+    <div class="win" aria-hidden="true"><img id="pImg" src="img/fries.jpg" alt="" fetchpriority="high"></div>
+    <div class="ring" id="ring" aria-hidden="true"></div>
+    <div class="dim" id="dim"></div>
+    <div class="pline" id="pline" aria-hidden="true">It starts with <b>the fruit.</b></div>
+    <div class="copy" id="copy">
+      <span class="eyebrow">Juice · Coffee · Food · Surat</span>
+      <h1>Everything starts with an <b>O.</b></h1>
+      <p>A café built around one fruit. Scroll, and we'll show you how.</p>
+      <div class="cue"><i></i>Scroll</div>
     </div>
-    <div class="hero-art" id="heroArt" aria-hidden="true">
-      <div class="disc" id="disc"></div>
-      <span class="float a"></span><span class="float b"></span><span class="float c"></span>
-      <img class="mascot" id="mascot" src="brand/mascot-point.webp" alt="" width="360" height="669" fetchpriority="high">
-    </div>
+    <img class="peek" id="peek" src="brand/mascot-point.webp" alt="" width="360" height="669">
   </div>
 </section>
 
-<!-- CH 1 -->
-<section class="pin wipe" id="orange" data-ch>
+<!-- CH 1: the fruit -->
+<section class="pin fruit" id="fruit" data-h="w">
   <div class="sticky">
-    <div class="sun" id="sun"></div>
-    <div class="layer l1" id="l1">
+    <div>
       <span class="eyebrow">Chapter 01</span>
-      <h2>It starts with <em>the fruit.</em></h2>
-      <p class="lead">Not a flavour. Not a garnish. The one ingredient everything else gets built around.</p>
-    </div>
-    <div class="layer l2" id="l2">
-      <h2>Valencia oranges. Squeezed fresh. <em>Served chilled.</em></h2>
-      <div class="stats">
-        <div class="stat"><b>₹199</b><span>Valencia orange juice, freshly squeezed</span></div>
-        <div class="stat"><b>100%</b><span>pure Valencia juice in our Orange Sorbet</span></div>
-        <div class="stat"><b>Free</b><span>add-ons on every Valencia OJ</span></div>
+      <h2 id="fh"></h2>
+      <div class="facts">
+        <div class="fact"><b>Valencia</b>Freshly squeezed orange juice, poured chilled.</div>
+        <div class="fact"><b>Pure</b>Our orange sorbet is nothing but Valencia juice.</div>
+        <div class="fact"><b>Late</b>Open 7 AM to 1:30 AM, for early coffee and late cravings.</div>
       </div>
     </div>
+    <div class="fx-arch" aria-hidden="true"><div class="arch"><img id="aImg" src="img/ogoj.jpg" alt="" loading="lazy"></div></div>
   </div>
 </section>
 
-<!-- CH 2 -->
-<section class="pin builds" id="builds">
-  <div class="sticky">
-    <div class="wrap b-head">
-      <span class="eyebrow">Chapter 02</span>
-      <h2>How we build <em>around orange.</em></h2>
-      <p class="lead">It's in the mayo, the spice, the marmalade, the dressing and the coffee.</p>
+<!-- CH 2: built around orange -->
+<section class="pin builds" id="builds" data-h="w">
+  <div class="sticky" id="bSticky">
+    <div class="b-top">
+      <div><span class="eyebrow">Chapter 02</span><h2>One fruit. Six ways in.</h2></div>
+      <div class="cnt" id="bCnt">01<small> / 06</small></div>
     </div>
     <div class="b-track" id="bTrack"></div>
-    <div class="wrap b-foot"><span id="bCount">01 / 06</span><div class="b-prog"><i id="bProg"></i></div></div>
+    <div class="b-nav" id="bNav" role="tablist" aria-label="Orange builds"></div>
   </div>
 </section>
 
-<!-- CH 3 -->
-<section class="pin coffee" id="coffee">
+<!-- CH 3: coffee -->
+<section class="pin coffee" id="coffee" data-h="c">
   <div class="sticky">
-    <div class="wrap">
-      <div>
-        <span class="eyebrow">Chapter 03</span>
-        <h2>Espresso, <em>meets orange.</em></h2>
-        <p class="lead">A double shot and a fresh-squeezed twist. Four ways we mix them.</p>
-        <div class="big" id="big" aria-hidden="true">01</div>
-        <div class="cnt" id="dCount">01 / 04</div>
-      </div>
-      <div class="stack" id="stack"></div>
+    <div>
+      <span class="eyebrow">Chapter 03</span>
+      <ul class="names" id="names"></ul>
+      <div class="desc" id="desc"></div>
+    </div>
+    <div class="disc" aria-hidden="true">
+      <svg class="ringtext" id="rt" viewBox="0 0 500 500"><defs><path id="circ" d="M250,250 m-214,0 a214,214 0 1,1 428,0 a214,214 0 1,1 -428,0"/></defs><text><textPath href="#circ" textLength="1330" lengthAdjust="spacing">Freshly squeezed · Double shot · Freshly squeezed · Double shot · </textPath></text></svg>
+      <div class="core"><img id="cImg" src="img/jar.jpg" alt="" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<!-- CH 4 -->
-<section class="reel" id="gallery" aria-label="Photo gallery">
-  <div class="wrap">
-    <span class="eyebrow">Chapter 04</span>
-    <h2>A day <em>in orange.</em></h2>
-    <p class="lead rv" style="margin-inline:auto;color:#fff3e6">Orange seats, orange glaze, orange everything.</p>
-    <div class="stage" id="stage" tabindex="0" role="group" aria-roledescription="carousel" aria-label="O for Orange photos"></div>
-    <div class="cap" id="cap" aria-live="polite"></div>
-    <div class="ctrl">
-      <button class="arrow" id="prev" aria-label="Previous photo">←</button>
-      <div class="dots" id="dots"></div>
-      <button class="arrow" id="next" aria-label="Next photo">→</button>
-    </div>
-  </div>
+<!-- CH 4: gallery -->
+<section class="gal" id="gallery" data-h="w">
+  <div class="head"><span class="eyebrow rv">Chapter 04</span><h2 class="rv" style="--d:.08s">A day<br>in <b>orange.</b></h2></div>
+  <div class="row r1"><div class="strip" id="s1"></div></div>
+  <div class="row r2"><div class="strip" id="s2"></div></div>
 </section>
 
-<!-- CH 5 -->
-<section class="glance" id="more">
-  <div class="wrap">
-    <span class="eyebrow rv">Chapter 05</span>
-    <h2 class="rv" style="--d:.06s">And plenty <em>more.</em></h2>
-    <p class="lead rv" style="--d:.12s">Same idea, every plate. A few places to start:</p>
-    <div class="chips" id="chips"></div>
-    <p class="rv" style="margin-top:34px"><a class="btn" href="https://wa.me/918490936644?text=Hi%20O%20for%20Orange%2C%20could%20you%20share%20the%20full%20menu%3F" target="_blank" rel="noopener">Ask us for the full menu</a></p>
+<!-- CH 5: more -->
+<section class="more" id="more" data-h="c">
+  <div class="head"><span class="eyebrow rv">Chapter 05</span><h2 class="rv" style="--d:.08s">And plenty <b>more.</b></h2></div>
+  <div class="mq" aria-hidden="true">
+    <div class="line" id="m1"></div><div class="line" id="m2"></div><div class="line" id="m3"></div>
   </div>
+  <div class="cta-row rv"><a class="btn" href="https://wa.me/918490936644?text=Hi%20O%20for%20Orange%2C%20could%20you%20share%20the%20full%20menu%3F" target="_blank" rel="noopener">Ask for the full menu</a><p>Burgers, wraps, croissants, bowls, coffee and coolers. Same idea on every plate.</p></div>
 </section>
 
-<!-- CH 6 -->
-<section class="visit" id="visit">
-  <div class="wrap">
-    <div class="v-info">
+<!-- VISIT -->
+<section class="visit" id="visit" data-h="w">
+  <div class="grid">
+    <div>
       <span class="eyebrow">Chapter 06</span>
-      <h2>Come say <em>hi.</em></h2>
-      <div class="v-card rv"><h3>Where</h3>O for Orange<br>Epic Eats Food Court, opp. Jolly Party Plot<br>Surat, Gujarat 395007
-        <div class="vbtns"><a class="vbtn" href="https://www.google.com/maps/search/?api=1&amp;query=O+for+Orange+Epic+Eats+Food+Court+opp.+Jolly+Party+Plot+Surat+395007" target="_blank" rel="noopener">Get directions →</a></div></div>
-      <div class="v-card rv" style="--d:.08s"><h3>Hours</h3><b>7:00 AM – 1:30 AM</b> · early coffee to late-night bites
-        <div class="vbtns"><a class="vbtn" href="https://wa.me/918490936644" target="_blank" rel="noopener">WhatsApp</a><a class="vbtn" href="tel:+918490936644">Call +91 84909 36644</a><a class="vbtn" href="https://instagram.com/ofororange._" target="_blank" rel="noopener">@ofororange._</a></div></div>
+      <h2>Come say <b>hi.</b></h2>
+      <div class="info">
+        <div class="rv"><h3>Where</h3><p>Epic Eats Food Court, opp. Jolly Party Plot<br>Surat, Gujarat 395007</p>
+          <div class="vb"><a href="https://www.google.com/maps/search/?api=1&amp;query=O+for+Orange+Epic+Eats+Food+Court+opp.+Jolly+Party+Plot+Surat+395007" target="_blank" rel="noopener">Get directions</a></div></div>
+        <div class="rv" style="--d:.08s"><h3>Open</h3><p>7:00 AM to 1:30 AM</p>
+          <div class="vb"><a href="https://wa.me/918490936644" target="_blank" rel="noopener">WhatsApp</a><a class="ghost" href="tel:+918490936644">Call +91 84909 36644</a><a class="ghost" href="https://instagram.com/ofororange._" target="_blank" rel="noopener">@ofororange._</a></div></div>
+      </div>
     </div>
-    <div class="v-art" aria-hidden="true"><img src="brand/mascot-ok.webp" alt="" width="360" height="697" loading="lazy"></div>
+    <div class="vart" aria-hidden="true"><img src="brand/mascot-ok.webp" alt="" width="360" height="697" loading="lazy"></div>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap">
-    <span>© <span id="yr">2026</span> O for Orange · Juice · Coffee · Food</span>
-    <span>Jucietap Restaurant Private Limited · Surat</span>
-  </div>
+  <img class="big" src="brand/logo-white.svg" alt="O for Orange" width="1000" height="318" loading="lazy">
+  <div class="legal"><span>© <span id="yr">2026</span> O for Orange · Juice · Coffee · Food</span><span>Jucietap Restaurant Private Limited · Surat</span></div>
 </footer>
 
 <script>
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
+const lerp=(a,b,t)=>a+(b-a)*t;
 const ease=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
 if(reduce)document.documentElement.classList.add('rm');
 $('#yr').textContent=new Date().getFullYear();
 
-/* ---------- content (all from the café's menu sheet) ---------- */
-/* [title, text, dish line, photo|null] */
+/* ---------- content (from the café's menu sheet) ---------- */
+/* [tab, title, text, try-it-in, photo|null] */
 const BUILDS=[
- ["Orange mayo","Our house sauce, on the burgers, wraps, loaded fries and nachos.","O Veggie Burger · ₹159","img/burger.jpg"],
- ["Orange peri peri","A citrusy seasoning tossed on crinkle fries, onion rings and nachos.","Orange Peri Peri Crinkle Fries · ₹169","img/fries.jpg"],
- ["Gochujang marmalade","House orange marmalade with a gentle gochujang kick. It glazes the croissant and the paneer burger.","Orange Glaze Croissant · ₹299","img/croissant.jpg"],
- ["Orange carrot dressing","Orange and carrot, poured over crunchy greens, golden paneer and fresh orange.","O Paneer Crunch Salad · ₹249","img/glaze.jpg"],
- ["Orange in the coffee","Freshly squeezed juice meets espresso, honey and brown sugar.","Citrus Americano · ₹249","img/jar.jpg"],
- ["Orange for dessert","Orange-infused brownies and cookies, and a sorbet that's pure Valencia juice.","Ó Brownie ₹199 · Ó Cookies ₹149 · Orange Sorbet ₹249",null]
+ ["Orange mayo","Orange mayo","Our house sauce. It goes on the burgers, the wraps, the loaded fries and the nachos.","O Veggie Burger","img/burger.jpg"],
+ ["Peri peri","Orange peri peri","A citrusy seasoning tossed over crinkle fries, onion rings and nachos.","Orange Peri Peri Crinkle Fries","img/fries.jpg"],
+ ["Marmalade","Gochujang marmalade","House orange marmalade with a gentle gochujang kick. It glazes the croissant and the paneer burger.","Orange Glaze Croissant","img/croissant.jpg"],
+ ["Dressing","Orange carrot dressing","Orange and carrot, poured over crunchy greens, golden paneer and fresh orange.","O Paneer Crunch Salad","img/glaze.jpg"],
+ ["In the coffee","Orange in the coffee","Fresh-squeezed juice meets espresso, honey and brown sugar.","Citrus Americano","img/jar.jpg"],
+ ["Dessert","Orange for dessert","Orange-infused brownies and cookies, and a sorbet that is nothing but Valencia juice.","Ó Brownie · Ó Cookies · Orange Sorbet",null]
 ];
-/* [name, price, description, tag] */
+const PAL=[[219,87,24],[201,68,22],[228,115,26],[212,80,28],[185,56,18],[224,128,31]];
 const DRINKS=[
- ["Citrus Americano",249,"Espresso with freshly squeezed orange juice, honey and brown sugar. A bright, citrusy take on the Americano.","Hot or iced"],
- ["Mont Blanc",229,"Cold brew and freshly squeezed orange juice, topped with a cloud of vanilla cream.","Cold"],
- ["O-Espresso Ale",199,"Two espresso shots with freshly squeezed orange juice and ginger ale. Fizzy, citrusy, bold.","Cold"],
- ["Orange Basil Smash",249,"Freshly squeezed orange juice shaken with house basil cordial, topped with ginger ale.","Coffee-free"]
+ ["Citrus Americano","Hot or iced","Espresso with freshly squeezed orange juice, honey and brown sugar. A bright, citrusy take on the Americano."],
+ ["Mont Blanc","Cold","Cold brew and freshly squeezed orange juice, topped with a cloud of vanilla cream."],
+ ["O-Espresso Ale","Cold","Two espresso shots with freshly squeezed orange juice and ginger ale. Fizzy, citrusy, bold."],
+ ["Orange Basil Smash","No coffee","Freshly squeezed orange juice shaken with house basil cordial, topped with ginger ale."]
 ];
 const PH=[
- ["img/fries.jpg","Orange, on the side","Crinkle fries, orange mayo and a dip."],
- ["img/ogoj.jpg","Orange on the label","Cold drinks, served with the O."],
- ["img/salad.jpg","Citrus in every bite","Orange pieces, fresh herbs, a bowl that eats light."],
- ["img/croissant.jpg","Warm croissants","Fresh out of the O for Orange box."],
- ["img/glaze.jpg","The orange pour","Orange, drizzled the moment it's ordered."],
- ["img/burger.jpg","Stacked, toasted, two hands","Burgers with house orange mayo."],
- ["img/jar.jpg","Cold, chilled, ours","Grab one on the way out."],
- ["img/dip.jpg","Dip it","Crinkle fries and something creamy."]
+ ["img/fries.jpg","Crinkle fries on an orange table, with a dip"],["img/ogoj.jpg","A cold drink with the O logo against an orange tree"],
+ ["img/salad.jpg","Salad bowl with orange pieces and fresh herbs"],["img/croissant.jpg","Croissant in an O for Orange box"],
+ ["img/glaze.jpg","Orange dressing poured over a salad bowl"],["img/burger.jpg","A stacked burger held in both hands"],
+ ["img/jar.jpg","A chilled jar drink with the O logo"],["img/dip.jpg","Fries and a creamy dip, seen from above"]
 ];
-const FROM=[["Toasts",49],["Desserts",99],["Burgers",129],["Wraps",149],["Fries & sides",149],["Coffee",89],["Coolers & juice",199],["Croissants",209],["Smoothie bowls",399]];
+const LINES=[["Burgers","Wraps","Croissants","Fries","Toasts"],["Smoothie bowls","Salads","Rice bowls","Desserts"],["Coffee","Cold brew","Coolers","Fresh juice"]];
 
 /* ---------- build DOM ---------- */
-$('#bTrack').innerHTML=BUILDS.map((b,i)=>`
- <article class="bcard${b[3]?'':' plain'}"><div class="ph">${b[3]?`<img src="${b[3]}" alt="" loading="lazy">`:'<b>Ó</b>'}<span class="n">0${i+1}</span></div>
- <div class="bd"><h3>${esc(b[0])}</h3><p>${esc(b[1])}</p><div class="dish">${esc(b[2])}</div></div></article>`).join('');
-$('#stack').innerHTML=DRINKS.map(d=>`
- <article class="dcard"><div class="top"><span class="tg">${esc(d[3])}</span><span class="pr">₹${d[1]}</span></div><h3>${esc(d[0])}</h3><p>${esc(d[2])}</p></article>`).join('');
-$('#chips').innerHTML=FROM.map((f,i)=>`<div class="chip rv" style="--d:${i*.05}s"><b>${esc(f[0])}</b><span>from ₹${f[1]}</span></div>`).join('');
+$('#fh').innerHTML=[["Valencia",1],["oranges.",1,1],["Squeezed",1],["fresh.",1,1],["Served",1],["chilled.",1,1]].map(w=>`<span class="wd${w[2]?' o':''}">${w[0]}</span> `).join('');
+$('#bTrack').innerHTML=BUILDS.map((b,i)=>`<article class="pc${b[4]?'':' plain'}">${b[4]?`<img src="${b[4]}" alt="" loading="lazy">`:'<div class="big">Ó</div>'}<div class="tx"><span class="no">0${i+1}</span><h3>${esc(b[1])}</h3><p>${esc(b[2])}</p><div class="try">Try it in · ${esc(b[3])}</div></div></article>`).join('');
+$('#bNav').innerHTML=BUILDS.map((b,i)=>`<button role="tab" data-i="${i}" aria-current="${i===0}">${esc(b[0])}</button>`).join('');
+$('#names').innerHTML=DRINKS.map((d,i)=>`<li data-i="${i}"><span>${esc(d[0])}</span><small>0${i+1}</small></li>`).join('');
+const tile=p=>`<div class="tile"><img src="${p[0]}" alt="${esc(p[1])}" loading="lazy" decoding="async"></div>`;
+$('#s1').innerHTML=PH.map(tile).join('');
+$('#s2').innerHTML=PH.slice().reverse().map(tile).join('');
+LINES.forEach((ws,i)=>{const html=ws.map(w=>`<span>${esc(w)}</span>`).join('');$('#m'+(i+1)).innerHTML=html+html+html});
 
-/* ---------- reveal on scroll ---------- */
+/* ---------- reveal ---------- */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
 $$('.rv').forEach(el=>io.observe(el));
 
-/* ---------- chapter rail ---------- */
-const railLinks=$$('#rail a');
-const targets=railLinks.map(a=>$(a.getAttribute('href')));
-const rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const i=targets.indexOf(e.target);railLinks.forEach((a,j)=>a.classList.toggle('on',j===i))}}),{rootMargin:'-45% 0px -45% 0px'});
-targets.forEach(t=>t&&rio.observe(t));
-
-/* ---------- scroll engine ---------- */
+/* ---------- scroll engine (smoothed, never hijacks scroll) ---------- */
 const prog=el=>{const r=el.getBoundingClientRect();return clamp(-r.top/Math.max(1,r.height-innerHeight))};
+const vis=el=>{const r=el.getBoundingClientRect();return clamp((innerHeight-r.top)/(innerHeight+r.height))};
 const snap=(p,n)=>{const raw=p*(n-1),i=Math.floor(raw),f=raw-i;return i>=n-1?n-1:i+ease(f)};
-const bar=$('#bar'),hdr=$('#hdr'),sun=$('#sun'),l1=$('#l1'),l2=$('#l2'),stats=$$('.stat');
-/* white copy of chapter-1 text, clipped to the growing orange disc so letters flip colour as the orange passes */
-const l1w=l1.cloneNode(true);l1w.removeAttribute('id');l1w.classList.add('l1w');l1w.setAttribute('aria-hidden','true');l1.after(l1w);
-const wipeEl=$('#orange'),buildsEl=$('#builds'),coffeeEl=$('#coffee');
-const track=$('#bTrack'),bcards=$$('.bcard'),bCount=$('#bCount'),bProg=$('#bProg');
-const dcards=$$('.dcard'),dCount=$('#dCount'),big=$('#big');
-const mascot=$('#mascot'),disc=$('#disc');
-let ticking=false;
+let busy=false,ticking=false;const S={};
+const sm=(k,t,r=.13)=>{const v=S[k]===undefined?t:S[k];let n=v+(t-v)*r;if(Math.abs(t-n)<.0005)n=t;S[k]=n;if(n!==t)busy=true;return n};
+
+const hdr=$('#hdr'),bar=$('#bar'),secs=$$('[data-h]');
+const pline=$('#pline'),pSticky=$('#pSticky'),pImg=$('#pImg'),ring=$('#ring'),dim=$('#dim'),copy=$('#copy'),peek=$('#peek'),orbA=$('#orbA'),orbB=$('#orbB');
+const fruitEl=$('#fruit'),words=$$('#fh .wd'),facts=$$('.fact'),aImg=$('#aImg');
+const buildsEl=$('#builds'),bSticky=$('#bSticky'),track=$('#bTrack'),pcs=$$('.pc'),bImgs=$$('.pc img'),bCnt=$('#bCnt'),bTabs=$$('#bNav button');
+const coffeeEl=$('#coffee'),nameEls=$$('#names li'),desc=$('#desc'),rt=$('#rt'),cImg=$('#cImg');
+const s1=$('#s1'),s2=$('#s2'),galEl=$('#gallery'),moreEl=$('#more'),ms=[$('#m1'),$('#m2'),$('#m3')];
+let curDrink=-1;
+
+function showDrink(i){
+  nameEls.forEach((li,j)=>li.classList.toggle('on',j===i));
+  desc.classList.add('sw');
+  setTimeout(()=>{desc.innerHTML=`<b>${esc(DRINKS[i][1])}</b>${esc(DRINKS[i][2])}`;desc.classList.remove('sw')},180);
+}
+if(reduce){desc.innerHTML=DRINKS.map(d=>`<p style="margin-bottom:12px"><b>${esc(d[0])}</b>${esc(d[2])}</p>`).join('')}
+else showDrink(0),curDrink=0;
+
+function geo(){
+  const vw=innerWidth,vh=innerHeight,m=vw<860,diag=Math.hypot(vw,vh);
+  const ry0=m?Math.min(vh*.25,205):Math.min(vh*.34,300),rx0=ry0*.78;
+  return {vw,vh,rx0,ry0,cx0:m?vw/2:vw*.7,cy0:m?vh*.36:vh*.52,rE:diag*.62};
+}
+
 function frame(){
-  ticking=false;
+  busy=false;ticking=false;
   const y=scrollY,max=document.documentElement.scrollHeight-innerHeight;
   bar.style.transform=`scaleX(${max>0?y/max:0})`;
-  hdr.classList.toggle('solid',y>40);
+  for(const s of secs){const r=s.getBoundingClientRect();if(r.top<=38&&r.bottom>38){hdr.classList.toggle('hc',s.dataset.h==='c');break}}
   if(reduce)return;
+  const g=geo();
 
-  if(y<innerHeight*1.3){ /* hero parallax */
-    mascot.style.transform=`translate3d(0,${y*.12}px,0)`;
-    disc.style.transform=`translate3d(0,${y*.05}px,0) rotate(${y*.04}deg)`;
-  }
+  /* hero portal */
+  let p=sm('portal',prog($('#top')));
+  const e=ease(clamp(p/.78));
+  const rx=lerp(g.rx0,g.rE,e),ry=lerp(g.ry0,g.rE,e),cx=lerp(g.cx0,g.vw/2,e),cy=lerp(g.cy0,g.vh/2,e);
+  pSticky.style.setProperty('--rx',rx.toFixed(1)+'px');pSticky.style.setProperty('--ry',ry.toFixed(1)+'px');
+  pSticky.style.setProperty('--cx',cx.toFixed(1)+'px');pSticky.style.setProperty('--cy',cy.toFixed(1)+'px');
+  pImg.style.transform=`scale(${1+p*.14})`;
+  ring.style.opacity=1-clamp((p-.42)/.2);
+  orbA.style.opacity=orbB.style.opacity=1-clamp((p-.3)/.2);
+  copy.style.opacity=1-clamp(p/.28);
+  copy.style.transform=g.vw>=860?`translate3d(${-p*120}px,-50%,0)`:`translate3d(${-p*60}px,0,0)`;
+  const lo=clamp((p-.5)/.12)*(1-clamp((p-.84)/.12));
+  pline.style.opacity=lo;pline.style.transform=`translate3d(0,calc(-50% + ${(1-clamp((p-.5)/.16))*40}px),0)`;
+  peek.style.opacity=g.vw<860?0:1-clamp(p/.3);peek.style.transform=`translate3d(0,${p*220}px,0) rotate(${p*6}deg)`;
+  dim.style.opacity=clamp((p-.74)/.26);
 
-  /* ch1: orange wipe */
-  let p=prog(wipeEl);
-  const s=.02+ease(clamp((p-.1)/.4))*1.0;
-  sun.style.setProperty('--s',s.toFixed(4));
-  const vmax=Math.max(innerWidth,innerHeight),o1=1-clamp((p-.42)/.1);
-  const t1=`translate3d(0,${-p*40}px,0) scale(${1-p*.05})`;
-  l1.style.opacity=o1;l1.style.transform=t1;
-  l1w.style.opacity=o1;l1w.style.transform=t1;
-  l1w.style.clipPath=`circle(${(.65*vmax*s).toFixed(1)}px at 50% 50%)`;
-  const o2=clamp((p-.5)/.12);
-  l2.style.opacity=o2;l2.style.transform=`translate3d(0,${(1-o2)*40}px,0)`;
-  stats.forEach((s,i)=>{const o=clamp((p-.66-i*.07)/.1);s.style.opacity=o;s.style.transform=`translate3d(0,${(1-o)*30}px,0)`});
+  /* ch1 fruit: words light up */
+  p=sm('fruit',prog(fruitEl));
+  const wp=clamp(p/.62),N=words.length;
+  words.forEach((w,i)=>{w.style.opacity=(.16+.84*clamp(wp*N-i)).toFixed(3)});
+  facts.forEach((f,i)=>{const o=clamp((p-.66-i*.07)/.1);f.style.opacity=o;f.style.transform=`translate3d(0,${(1-o)*26}px,0)`});
+  aImg.style.transform=`translate3d(0,${(.5-p)*70}px,0)`;
 
-  /* ch2: horizontal build carousel */
-  p=prog(buildsEl);
-  const n=bcards.length,idx=snap(p,n),cw=bcards[0].offsetWidth,gap=parseFloat(getComputedStyle(track).columnGap)||24;
+  /* ch2 builds: poster carousel + shifting colour */
+  p=sm('builds',prog(buildsEl));
+  const n=pcs.length,idx=snap(p,n),cw=pcs[0].offsetWidth,gap=parseFloat(getComputedStyle(track).columnGap)||28;
   track.style.transform=`translate3d(${-idx*(cw+gap)}px,0,0)`;
-  bcards.forEach((c,i)=>{const d=Math.min(Math.abs(i-idx),1.5);c.style.transform=`scale(${1-Math.min(d,1)*.09}) translateY(${Math.min(d,1)*14}px)`;c.style.opacity=1-d*.38});
-  bCount.textContent=`0${Math.round(idx)+1} / 0${n}`;
-  bProg.style.transform=`scaleX(${p})`;
+  pcs.forEach((c,i)=>{const d=i-idx,a=Math.min(Math.abs(d),1.4);
+    c.style.transform=`scale(${1-Math.min(a,1)*.14}) translateY(${Math.min(a,1)*22}px)`;c.style.opacity=(1-a*.42).toFixed(3);
+    bImgs[i]&&(bImgs[i].style.transform=`translate3d(${d*-9}%,0,0)`)});
+  const i0=Math.floor(idx),f=idx-i0,c0=PAL[i0],c1=PAL[Math.min(i0+1,n-1)];
+  bSticky.style.background=`rgb(${lerp(c0[0],c1[0],f)|0},${lerp(c0[1],c1[1],f)|0},${lerp(c0[2],c1[2],f)|0})`;
+  const cur=Math.round(idx);
+  bCnt.innerHTML=`0${cur+1}<small> / 0${n}</small>`;
+  bTabs.forEach((b,i)=>b.setAttribute('aria-current',i===cur));
 
-  /* ch3: coffee stack */
-  p=prog(coffeeEl);
-  const m=dcards.length,k=snap(p,m);
-  dcards.forEach((c,i)=>{const d=i-k,a=Math.abs(d);
-    c.style.transform=`translate3d(${d*44}px,${d*70}px,0) rotate(${d*5}deg) scale(${1-a*.07})`;
-    c.style.opacity=clamp(1-a*.85);c.style.zIndex=10-Math.round(a);c.style.pointerEvents=a<.5?'auto':'none'});
-  const cur=Math.round(k);
-  dCount.textContent=`0${cur+1} / 0${m}`;big.textContent=`0${cur+1}`;
+  /* ch3 coffee */
+  p=sm('coffee',prog(coffeeEl));
+  const k=Math.round(snap(p,DRINKS.length));
+  if(k!==curDrink){curDrink=k;showDrink(k)}
+  rt.style.transform=`rotate(${p*300}deg)`;
+  cImg.style.transform=`scale(${1.05+p*.12}) translate3d(0,${(.5-p)*20}px,0)`;
+
+  /* ch4 gallery strips drift in opposite directions */
+  p=sm('gal',vis(galEl),.1);
+  const t1=Math.max(0,s1.scrollWidth-innerWidth+60),t2=Math.max(0,s2.scrollWidth-innerWidth+60);
+  s1.style.transform=`translate3d(${-t1*p+30}px,0,0)`;
+  s2.style.transform=`translate3d(${-t2*(1-p)+30}px,0,0)`;
+
+  /* ch5 marquee type */
+  p=sm('more',vis(moreEl),.1);
+  ms.forEach((m,i)=>{const w=m.scrollWidth/3,dir=i%2?1:-1;m.style.transform=`translate3d(${(dir<0?-1:-2)*w+dir*p*w*.9}px,0,0)`});
 }
-const req=()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}};
-addEventListener('scroll',req,{passive:true});addEventListener('resize',req);
-frame();
-if(!reduce){const cw=()=>{const w=Math.min(innerWidth*.78,400);document.documentElement.style.setProperty('--cw',w+'px');req()};cw();addEventListener('resize',cw)}
+const req=()=>{if(!ticking){ticking=true;requestAnimationFrame(()=>{frame();if(busy){ticking=false;req()}})}};
+addEventListener('scroll',req,{passive:true});
+addEventListener('resize',()=>{setCw();req()});
+function setCw(){document.documentElement.style.setProperty('--cw',Math.min(innerWidth*.74,400)+'px')}
+setCw();frame();req();
 
-/* ---------- gallery carousel ---------- */
-(()=>{
- const stage=$('#stage'),cap=$('#cap'),dots=$('#dots');
- const N=PH.length;let cur=0,timer=null,drag=null;
- stage.innerHTML=PH.map((p,i)=>`<figure class="slide" data-i="${i}"><img src="${p[0]}" alt="${esc(p[1])} — ${esc(p[2])}" loading="lazy" decoding="async"></figure>`).join('');
- dots.innerHTML=PH.map((p,i)=>`<button class="dot" data-i="${i}" aria-label="Show photo ${i+1}"></button>`).join('');
- const slides=[...stage.children],dotEls=[...dots.children];
- function render(){
-  const w=slides[0].getBoundingClientRect().width||300,step=w*.62;
-  slides.forEach((s,i)=>{
-   let d=i-cur;if(d>N/2)d-=N;if(d<-N/2)d+=N;
-   const a=Math.abs(d),hide=a>2;
-   s.style.transform=`translateX(${d*step}px) translateY(${a*18}px) scale(${1-a*.16}) rotate(${d*3}deg)`;
-   s.style.zIndex=10-a;s.style.opacity=hide?0:(1-a*.28);
-   s.style.filter=a?'saturate(.8) brightness(.78)':'none';
-   s.style.pointerEvents=hide?'none':'auto';
-   s.classList.toggle('is-active',a===0);s.setAttribute('aria-hidden',a===0?'false':'true');
-  });
-  dotEls.forEach((b,i)=>b.setAttribute('aria-current',i===cur));
-  cap.innerHTML=`<b>${esc(PH[cur][1])}</b><span>${esc(PH[cur][2])}</span>`;
- }
- const go=i=>{cur=(i+N)%N;render()};
- const stop=()=>{clearInterval(timer);timer=null};
- const play=()=>{if(reduce)return;stop();timer=setInterval(()=>go(cur+1),4500)};
- $('#next').onclick=()=>{go(cur+1);play()};$('#prev').onclick=()=>{go(cur-1);play()};
- dots.onclick=e=>{const b=e.target.closest('.dot');if(b){go(+b.dataset.i);play()}};
- stage.addEventListener('click',e=>{const s=e.target.closest('.slide');if(s&&!drag?.moved){const i=+s.dataset.i;if(i!==cur){go(i);play()}}});
- stage.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){go(cur+1);play()}else if(e.key==='ArrowLeft'){go(cur-1);play()}});
- stage.addEventListener('pointerdown',e=>{drag={x:e.clientX,moved:false};stop()});
- addEventListener('pointermove',e=>{if(drag&&Math.abs(e.clientX-drag.x)>8)drag.moved=true});
- addEventListener('pointerup',e=>{if(!drag)return;const dx=e.clientX-drag.x;if(Math.abs(dx)>40)go(cur+(dx<0?1:-1));setTimeout(()=>{drag=null;play()},0)});
- stage.addEventListener('mouseenter',stop);stage.addEventListener('mouseleave',play);
- stage.addEventListener('focusin',stop);stage.addEventListener('focusout',play);
- document.addEventListener('visibilitychange',()=>document.hidden?stop():play());
- addEventListener('resize',render);
- render();play();
-})();
+/* ---------- click targets ---------- */
+function jump(el,i,n){const r=el.getBoundingClientRect();scrollTo({top:r.top+scrollY+(i/(n-1))*(el.offsetHeight-innerHeight),behavior:reduce?'auto':'smooth'})}
+$('#bNav').addEventListener('click',e=>{const b=e.target.closest('button');if(b){if(reduce){pcs[+b.dataset.i].scrollIntoView({inline:'center',block:'nearest',behavior:'auto'})}else jump(buildsEl,+b.dataset.i,BUILDS.length)}});
+$('#names').addEventListener('click',e=>{const li=e.target.closest('li');if(li&&!reduce)jump(coffeeEl,+li.dataset.i,DRINKS.length)});
 </script>
 </body>
 </html>
