@@ -8,7 +8,13 @@
 <meta property="og:title" content="O for Orange — Juice · Coffee · Food">
 <meta property="og:description" content="Single-origin Udaygiri coffee, fresh-squeezed orange juice and an entirely vegetarian menu in Surat.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://ofororange.com/">
+<meta property="og:image" content="https://ofororange.com/img/fries.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#E8651A">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"O for Orange","url":"https://ofororange.com/","image":"https://ofororange.com/img/fries.jpg","telephone":"+918490936644","servesCuisine":["Coffee","Juice","Vegetarian"],"priceRange":"₹₹","address":{"@type":"PostalAddress","streetAddress":"O For Orange, Epic Eats Food Court, opp. Jolly Party Plot","addressLocality":"Surat","addressRegion":"Gujarat","postalCode":"395007","addressCountry":"IN"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"01:30"},"sameAs":["https://instagram.com/ofororange._"]}
+</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23E8651A'/%3E%3Ccircle cx='32' cy='32' r='11' fill='none' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -142,6 +148,34 @@ h2 em{font:italic 600 .9em var(--serif);text-transform:none;color:var(--orange)}
 .byd-g .full{grid-column:1/-1}
 @media(max-width:640px){.byd-g{grid-template-columns:1fr}}
 
+/* hero photo */
+.hero-art .ph{position:absolute;inset:22%;width:56%;height:56%;object-fit:cover;border-radius:50%;border:6px solid #fff3e6;box-shadow:0 20px 40px -16px rgba(0,0,0,.5)}
+
+/* carousel */
+.reel{position:relative;overflow:hidden;color:#fff;padding:84px 0 70px;background:radial-gradient(120% 90% at 50% 0%,#ff9440 0%,var(--orange) 45%,#b83f05 100%)}
+.reel::before,.reel::after{content:"";position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,.22);pointer-events:none}
+.reel::before{width:720px;height:720px;left:50%;top:50%;transform:translate(-50%,-50%)}
+.reel::after{width:1080px;height:1080px;left:50%;top:50%;transform:translate(-50%,-50%);border-color:rgba(255,255,255,.12)}
+.reel .wrap{position:relative;z-index:1;text-align:center}
+.reel .eyebrow{color:#fff;opacity:.9}
+.reel h2 em{color:#1b140d}
+.reel .sub{margin-inline:auto;color:#fff3e6}
+.stage{position:relative;height:540px;margin-top:34px;touch-action:pan-y;user-select:none;-webkit-user-select:none;outline:none}
+.slide{position:absolute;left:50%;top:0;width:min(320px,62vw);aspect-ratio:2/3;margin-left:calc(min(320px,62vw)/-2);border-radius:26px;overflow:hidden;background:#1b140d;box-shadow:0 30px 60px -20px rgba(60,20,0,.7);transition:transform .7s cubic-bezier(.22,.8,.24,1),opacity .7s,filter .7s;will-change:transform}
+.slide img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;-webkit-user-drag:none}
+.slide.is-active{box-shadow:0 40px 80px -20px rgba(60,20,0,.85),0 0 0 6px rgba(255,243,230,.9)}
+.cap{margin-top:22px;min-height:76px}
+.cap b{display:block;font:italic 700 clamp(1.5rem,3.4vw,2.2rem)/1.15 var(--serif)}
+.cap span{display:block;margin-top:6px;color:#fff3e6;opacity:.92}
+.ctrl{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:14px}
+.arrow{width:48px;height:48px;border-radius:50%;border:2px solid #fff;background:transparent;color:#fff;font-size:1.3rem;cursor:pointer;transition:.2s;display:grid;place-items:center}
+.arrow:hover,.arrow:focus-visible{background:#fff;color:var(--orange-d)}
+.dots{display:flex;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;border:0;background:rgba(255,255,255,.4);cursor:pointer;padding:0;transition:.25s}
+.dot[aria-current=true]{background:#fff;width:28px;border-radius:6px}
+@media(max-width:640px){.stage{height:470px}.reel::before{width:520px;height:520px}.reel::after{width:760px;height:760px}}
+@media(prefers-reduced-motion:reduce){.slide{transition:none}}
+
 /* visit */
 .visit{background:var(--orange);color:#fff}
 .visit .eyebrow{color:#fff;opacity:.85}
@@ -150,6 +184,9 @@ h2 em{font:italic 600 .9em var(--serif);text-transform:none;color:var(--orange)}
 .v-card{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:28px}
 .v-card h3{font:600 .8rem var(--disp);letter-spacing:.24em;text-transform:uppercase;margin-bottom:10px;opacity:.9}
 .v-card p{font-size:1.15rem}
+.v-card a{text-decoration:none}
+.vbtn{display:inline-block;background:#1b140d;color:#fff;font:600 .85rem var(--disp);letter-spacing:.14em;text-transform:uppercase;padding:11px 20px;border-radius:999px;transition:.2s}
+.vbtn:hover{background:#000;transform:translateY(-1px)}
 @media(max-width:760px){.v-grid{grid-template-columns:1fr}}
 
 footer{padding:34px 0;font-size:.85rem;color:var(--mut)}
@@ -165,6 +202,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
         <span><b>O</b> for Orange</span>
       </a>
       <ul>
+        <li><a href="#reel">Gallery</a></li>
         <li><a href="#signatures">Signatures</a></li>
         <li><a href="#coffee">Coffee</a></li>
         <li><a href="#menu">Menu</a></li>
@@ -193,7 +231,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
   </div>
   <div class="hero-art" aria-hidden="true">
     <div class="disc"></div>
-    <svg viewBox="0 0 200 200"><g stroke="#fff" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"><path d="M100 18v26M100 156v26M18 100h26M156 100h26M42 42l18 18M140 140l18 18M158 42l-18 18M60 140l-18 18"/></g><circle cx="100" cy="100" r="34" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="5"/></svg>
+    <img class="ph" src="img/fries.jpg" alt="" width="400" height="400" fetchpriority="high">
+    <svg viewBox="0 0 200 200"><g stroke="#fff" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"><path d="M100 10v22M100 168v22M10 100h22M168 100h22M36 36l15 15M149 149l15 15M164 36l-15 15M51 149l-15 15"/></g></svg>
     <div class="tag t1">OG OJ<small>the reason we exist</small></div>
     <div class="tag t2">Jaffa<small>chocolate · orange · espresso</small></div>
   </div>
@@ -203,6 +242,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
   <span>Fresh-squeezed OG OJ</span><span>Single-origin Udaygiri</span><span>Orange Grilled Cheese</span><span>Jaffa</span><span>Roman Pizza</span><span>Smoothie Bowls</span><span>Ceremonial Matcha</span><span>100% Vegetarian</span>
   <span>Fresh-squeezed OG OJ</span><span>Single-origin Udaygiri</span><span>Orange Grilled Cheese</span><span>Jaffa</span><span>Roman Pizza</span><span>Smoothie Bowls</span><span>Ceremonial Matcha</span><span>100% Vegetarian</span>
 </div></div>
+
+<section id="reel" class="reel" aria-label="Photo gallery">
+  <div class="wrap">
+    <span class="eyebrow">Squeezed fresh daily</span>
+    <h2>Life's better <em>in orange</em></h2>
+    <p class="sub">Orange glaze, orange seats, orange juice. Swipe through a day at O for Orange.</p>
+    <div class="stage" id="stage" tabindex="0" role="group" aria-roledescription="carousel" aria-label="O for Orange photos"></div>
+    <div class="cap" id="cap" aria-live="polite"></div>
+    <div class="ctrl">
+      <button class="arrow" id="prev" aria-label="Previous photo">←</button>
+      <div class="dots" id="dots"></div>
+      <button class="arrow" id="next" aria-label="Next photo">→</button>
+    </div>
+  </div>
+</section>
 
 <section id="signatures">
   <div class="wrap">
@@ -262,8 +316,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
     <span class="eyebrow">Come hungry</span>
     <h2>Find us in <em>Surat</em></h2>
     <div class="v-grid">
-      <div class="v-card"><h3>Where</h3><p>O for Orange<br>Surat, Gujarat</p></div>
-      <div class="v-card"><h3>Order</h3><p>Walk in and tell the barista how you like it. Every drink is made to order.</p></div>
+      <div class="v-card"><h3>Where</h3><p>O for Orange<br>Epic Eats Food Court, opp. Jolly Party Plot<br>Surat, Gujarat 395007</p>
+        <p style="margin-top:18px"><a class="vbtn" href="https://www.google.com/maps/search/?api=1&amp;query=O+for+Orange+Epic+Eats+Food+Court+opp.+Jolly+Party+Plot+Surat+395007" target="_blank" rel="noopener">Get directions →</a></p></div>
+      <div class="v-card"><h3>Hours</h3><p><b>7:00 AM – 1:30 AM</b><br>Early coffee to late-night bites.</p>
+        <h3 style="margin-top:22px">Say hello</h3><p><a href="tel:+918490936644">+91 84909 36644</a></p>
+        <p style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="vbtn" href="https://wa.me/918490936644" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="vbtn" href="tel:+918490936644">Call</a>
+          <a class="vbtn" href="https://instagram.com/ofororange._" target="_blank" rel="noopener">@ofororange._</a></p></div>
     </div>
   </div>
 </section>
@@ -278,6 +338,60 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
 
 <script>
 document.getElementById('yr').textContent=new Date().getFullYear();
+
+/* ---- orange carousel ---- */
+(()=>{
+ const PH=[
+  ["img/fries.jpg","Glazed to order","Crispy fries, orange glaze drizzle and a dip on the side."],
+  ["img/ogoj.jpg","OG OJ","Fresh-squeezed orange juice. The reason we exist."],
+  ["img/salad.jpg","Citrus in every bite","Orange segments, fresh herbs, a bowl that eats light."],
+  ["img/croissant.jpg","Buttery. Marmalade-bright.","Croissants out of the O for Orange box."],
+  ["img/glaze.jpg","The orange pour","Orange glaze, drizzled the moment it's ordered."],
+  ["img/burger.jpg","Grilled, pressed, stacked","Two hands required."],
+  ["img/jar.jpg","Cold, bottled, ours","House coolers and cold brew, ready to grab."],
+  ["img/dip.jpg","Dip it. Twice.","Extra dip is only ₹25."]
+ ];
+ const stage=document.getElementById('stage'),cap=document.getElementById('cap'),dots=document.getElementById('dots');
+ const N=PH.length;let cur=0,timer=null,drag=null;
+ stage.innerHTML=PH.map((p,i)=>`<figure class="slide" data-i="${i}"><img src="${p[0]}" alt="${esc2(p[1])} — ${esc2(p[2])}" loading="${i<3?'eager':'lazy'}" decoding="async"></figure>`).join('');
+ dots.innerHTML=PH.map((p,i)=>`<button class="dot" data-i="${i}" aria-label="Show photo ${i+1}"></button>`).join('');
+ function esc2(s){return String(s).replace(/"/g,'&quot;')}
+ const slides=[...stage.children],dotEls=[...dots.children];
+ function render(){
+  const w=slides[0].getBoundingClientRect().width||300;
+  const step=w*.62;
+  slides.forEach((s,i)=>{
+   let d=i-cur; if(d>N/2)d-=N; if(d<-N/2)d+=N;
+   const a=Math.abs(d),hide=a>2;
+   s.style.transform=`translateX(${d*step}px) translateY(${a*18}px) scale(${1-a*.16}) rotate(${d*3}deg)`;
+   s.style.zIndex=10-a;
+   s.style.opacity=hide?0:(1-a*.28);
+   s.style.filter=a?'saturate(.8) brightness(.78)':'none';
+   s.style.pointerEvents=hide?'none':'auto';
+   s.classList.toggle('is-active',a===0);
+   s.setAttribute('aria-hidden',a===0?'false':'true');
+  });
+  dotEls.forEach((b,i)=>b.setAttribute('aria-current',i===cur));
+  cap.innerHTML=`<b>${PH[cur][1]}</b><span>${PH[cur][2]}</span>`;
+ }
+ const go=i=>{cur=(i+N)%N;render()};
+ const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ const play=()=>{if(reduce)return;stop();timer=setInterval(()=>go(cur+1),4500)};
+ const stop=()=>{clearInterval(timer);timer=null};
+ document.getElementById('next').onclick=()=>{go(cur+1);play()};
+ document.getElementById('prev').onclick=()=>{go(cur-1);play()};
+ dots.onclick=e=>{const b=e.target.closest('.dot');if(b){go(+b.dataset.i);play()}};
+ stage.addEventListener('click',e=>{const s=e.target.closest('.slide');if(s&&!drag?.moved){const i=+s.dataset.i;if(i!==cur){go(i);play()}}});
+ stage.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){go(cur+1);play()}else if(e.key==='ArrowLeft'){go(cur-1);play()}});
+ stage.addEventListener('pointerdown',e=>{drag={x:e.clientX,moved:false};stop()});
+ addEventListener('pointermove',e=>{if(drag&&Math.abs(e.clientX-drag.x)>8)drag.moved=true});
+ addEventListener('pointerup',e=>{if(!drag)return;const dx=e.clientX-drag.x;if(Math.abs(dx)>40)go(cur+(dx<0?1:-1));setTimeout(()=>{drag=null;play()},0)});
+ stage.addEventListener('mouseenter',stop);stage.addEventListener('mouseleave',play);
+ stage.addEventListener('focusin',stop);stage.addEventListener('focusout',play);
+ document.addEventListener('visibilitychange',()=>document.hidden?stop():play());
+ addEventListener('resize',render);
+ render();play();
+})();
 
 /* item: [name, price, desc, flags, pairs]  flags: s=signature star, S=signature, o=only here */
 const MENU=[
