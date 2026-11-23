@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>O for Orange | Juice · Coffee · Food, Surat</title>
-<meta name="description" content="O for Orange, Surat: a café built around one fruit. Orange mayo, orange peri peri fries, marmalade croissants, fresh Valencia juice and citrus coffee. Epic Eats Food Court, open 7 AM to 1:30 AM.">
+<meta name="description" content="O for Orange, Surat: a café built around one fruit. Fresh Valencia juice, orange-led food and citrus coffee. Epic Eats Food Court, open 7 AM to 1:30 AM.">
 <meta property="og:title" content="O for Orange | Everything starts with an O">
-<meta property="og:description" content="A café built around one fruit. Fresh Valencia juice, orange peri peri fries, citrus coffee. Surat.">
+<meta property="og:description" content="A café built around one fruit. Fresh Valencia juice, orange-led food and citrus coffee. Surat.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ofororange.com/">
 <meta property="og:image" content="https://ofororange.com/img/fries.jpg">
@@ -173,7 +173,8 @@ header.away{transform:translateY(-110%)}
 .disc .ringtext{position:absolute;inset:0;width:100%;height:100%;will-change:transform}
 .disc .ringtext text{font:700 21px var(--sans);letter-spacing:.36em;fill:var(--ember);text-transform:uppercase}
 .disc .core{position:absolute;inset:15%;border-radius:50%;overflow:hidden;box-shadow:var(--lift)}
-.disc .core img{width:100%;height:100%;object-fit:cover;will-change:transform}
+.disc .core img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform,opacity;transition:opacity 1s var(--out)}
+.disc .core img+img{opacity:0}
 @media(max-width:860px){.coffee .sticky{grid-template-columns:1fr;align-content:center;gap:.4rem;padding-top:5rem}.disc{width:min(50vw,30vh);order:-1}.names li{font-size:clamp(1.8rem,8.4vw,3rem)}.desc{min-height:7em;margin-top:1rem;font-size:1.05rem}}
 
 /* ================= CH 4: gallery (ember) ================= */
@@ -194,17 +195,16 @@ header.away{transform:translateY(-110%)}
 .more .eyebrow{color:var(--orange-deep)}
 .more h2{font-size:min(6.6vw,13vh);line-height:.96;margin-top:1.6rem}
 .more h2 b{font-weight:400;color:var(--orange-deep)}
-.idx{list-style:none;margin-top:clamp(2.4rem,7vh,5rem);border-top:1px solid var(--hair)}
-.idx li{display:grid;grid-template-columns:3rem minmax(0,1.2fr) minmax(0,1fr);align-items:baseline;gap:1.4rem;padding:clamp(1rem,2.6vh,1.9rem) 0;border-bottom:1px solid var(--hair)}
-.idx .n{font:700 .72rem var(--sans);letter-spacing:.2em;color:var(--orange-deep)}
-.idx .t{font:400 min(4.6vw,8.6vh)/1 var(--serif);letter-spacing:-.025em;transition:transform .7s var(--out),color .4s}
-.idx .d{font-size:1.05rem;color:var(--mut);line-height:1.45;justify-self:end;text-align:right;max-width:30ch}
-.idx li:hover .t{transform:translateX(1.2rem);color:var(--orange-deep)}
+.trio{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:clamp(.9rem,2.4vw,2.2rem);align-items:end;margin-top:clamp(2.4rem,7vh,5rem)}
+.trio figure{overflow:hidden;background:var(--ember-2);box-shadow:var(--lift);border-radius:999px 999px 1.2rem 1.2rem}
+.trio figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--out)}
+.trio figure:hover img{transform:scale(1.05)}
+.trio .a{aspect-ratio:3/4}.trio .b{aspect-ratio:3/4.5}.trio .c{aspect-ratio:3/3.6}
 .cta-row{margin-top:clamp(2.4rem,6vh,4rem);display:flex;align-items:center;gap:1.6rem;flex-wrap:wrap}
 .cta-row p{max-width:34ch;color:var(--mut)}
 .btn{display:inline-block;background:var(--orange-deep);color:var(--cream);text-decoration:none;font:700 .74rem var(--sans);letter-spacing:.22em;text-transform:uppercase;padding:1.3em 2.4em;border-radius:999px;transition:transform .4s var(--out),background .3s}
 .btn:hover{transform:translateY(-3px);background:var(--ember)}
-@media(max-width:700px){.idx li{grid-template-columns:2rem 1fr;gap:.2rem 1rem}.idx .d{grid-column:2;justify-self:start;text-align:left}.idx .t{font-size:clamp(1.9rem,9vw,2.8rem)}}
+@media(max-width:700px){.trio{grid-template-columns:1fr 1fr}.trio .c{display:none}}
 
 /* ================= VISIT (orange) ================= */
 .visit{position:relative;background:linear-gradient(160deg,oklch(0.7 0.2 49),var(--orange) 45%,var(--orange-deep));color:var(--ember);overflow:hidden;padding:clamp(6rem,15vh,11rem) var(--m) 0}
@@ -276,7 +276,7 @@ footer .legal{margin-top:clamp(2.5rem,7vh,5rem);padding-top:1.4rem;border-top:1p
       <h2 id="fh"></h2>
       <div class="facts">
         <div class="fact"><b>Valencia</b>Freshly squeezed orange juice, poured chilled.</div>
-        <div class="fact"><b>Pure</b>Our orange sorbet is nothing but Valencia juice.</div>
+        <div class="fact"><b>Everywhere</b>In the sauce, the spice, the glaze and the coffee.</div>
         <div class="fact"><b>Late</b>Open 7 AM to 1:30 AM, for early coffee and late cravings.</div>
       </div>
     </div>
@@ -307,7 +307,7 @@ footer .legal{margin-top:clamp(2.5rem,7vh,5rem);padding-top:1.4rem;border-top:1p
     </div>
     <div class="disc" aria-hidden="true">
       <svg class="ringtext" id="rt" viewBox="0 0 500 500"><defs><path id="circ" d="M250,250 m-214,0 a214,214 0 1,1 428,0 a214,214 0 1,1 -428,0"/></defs><text><textPath href="#circ" textLength="1330" lengthAdjust="spacing">Freshly squeezed · Double shot · Freshly squeezed · Double shot · </textPath></text></svg>
-      <div class="core"><img id="cImg" src="img/jar.jpg" alt="" loading="lazy"></div>
+      <div class="core"><img id="cImg" src="img/jar.jpg" alt="" loading="lazy"><img id="cImg2" src="img/ogoj.jpg" alt="" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -323,7 +323,11 @@ footer .legal{margin-top:clamp(2.5rem,7vh,5rem);padding-top:1.4rem;border-top:1p
 <section class="more" id="more" data-h="c" data-ch="05|The rest">
   <span class="eyebrow rv">Chapter 05</span>
   <h2 class="rv" style="--d:.08s">And plenty <b>more.</b></h2>
-  <ul class="idx" id="idx"></ul>
+  <div class="trio">
+    <figure class="a rv"><img src="img/burger3.jpg" alt="A close-up of a burger" loading="lazy"></figure>
+    <figure class="b rv" style="--d:.12s"><img src="img/seat.jpg" alt="A salad bowl on an orange seat" loading="lazy"></figure>
+    <figure class="c rv" style="--d:.24s"><img src="img/croiss2.jpg" alt="A croissant held in one hand" loading="lazy"></figure>
+  </div>
   <div class="cta-row rv"><a class="btn" href="https://wa.me/918490936644?text=Hi%20O%20for%20Orange%2C%20could%20you%20share%20the%20full%20menu%3F" target="_blank" rel="noopener">Ask for the full menu</a><p>Same idea on every plate. Message us and we'll send it over.</p></div>
 </section>
 
@@ -361,45 +365,40 @@ if(reduce)document.documentElement.classList.add('rm');
 $('#yr').textContent=new Date().getFullYear();
 
 /* ---------- content (from the café's menu sheet) ---------- */
-/* [tab, title, text, try-it-in, photo|null] */
+/* [tab, title, text, photo|null] */
 const BUILDS=[
- ["Orange mayo","Orange mayo","Our house sauce. It goes on the burgers, the wraps, the loaded fries and the nachos.","O Veggie Burger","img/burger.jpg"],
- ["Peri peri","Orange peri peri","A citrusy seasoning tossed over crinkle fries, onion rings and nachos.","Orange Peri Peri Crinkle Fries","img/fries.jpg"],
- ["Marmalade","Gochujang marmalade","House orange marmalade with a gentle gochujang kick. It glazes the croissant and the paneer burger.","Orange Glaze Croissant","img/croissant.jpg"],
- ["Dressing","Orange carrot dressing","Orange and carrot, poured over crunchy greens, golden paneer and fresh orange.","O Paneer Crunch Salad","img/glaze.jpg"],
- ["In the coffee","Orange in the coffee","Fresh-squeezed juice meets espresso, honey and brown sugar.","Citrus Americano","img/jar.jpg"],
- ["Dessert","Orange for dessert","Orange-infused brownies and cookies, and a sorbet that is nothing but Valencia juice.","Ó Brownie, Ó Cookies, Orange Sorbet",null]
+ ["Orange mayo","Orange mayo","Our house sauce. It goes on the burgers, the wraps, the fries and the nachos.","img/burger2.jpg"],
+ ["Peri peri","Orange peri peri","A citrusy seasoning tossed over crinkle fries, onion rings and nachos.","img/fries.jpg"],
+ ["Marmalade","Gochujang marmalade","House orange marmalade with a gentle gochujang kick. It glazes the croissant and the burger.","img/croissant.jpg"],
+ ["Dressing","Orange carrot dressing","Orange and carrot, poured over crunchy greens, golden paneer and fresh orange.","img/glaze.jpg"],
+ ["In the coffee","Orange in the coffee","Fresh-squeezed juice meets espresso, honey and brown sugar.","img/jar.jpg"],
+ ["Dessert","Orange for dessert","Orange-infused bakes, and a sorbet that is nothing but Valencia juice.",null]
 ];
 const DRINKS=[
- ["Citrus Americano","Hot or iced","Espresso with freshly squeezed orange juice, honey and brown sugar. A bright, citrusy take on the Americano."],
- ["Mont Blanc","Cold","Cold brew and freshly squeezed orange juice, topped with a cloud of vanilla cream."],
- ["O-Espresso Ale","Cold","Two espresso shots with freshly squeezed orange juice and ginger ale. Fizzy, citrusy, bold."],
- ["Orange Basil Smash","No coffee","Freshly squeezed orange juice shaken with house basil cordial, topped with ginger ale."]
+ ["Juice in the cup","Hot or iced","Espresso with freshly squeezed orange juice, honey and brown sugar. A bright, citrusy take on coffee."],
+ ["A citrus cloud","Cold","Cold brew and freshly squeezed orange juice, topped with a cloud of vanilla cream."],
+ ["Espresso with fizz","Cold","Two espresso shots with freshly squeezed orange juice and ginger ale. Fizzy, citrusy, bold."],
+ ["Orange, basil, ginger","No coffee","Freshly squeezed orange juice shaken with house basil cordial, topped with ginger ale."]
 ];
 const PH=[
- ["img/fries.jpg","Crinkle fries on an orange table, with a dip"],["img/ogoj.jpg","A cold drink with the O logo against an orange tree"],
- ["img/salad.jpg","Salad bowl with orange pieces and fresh herbs"],["img/croissant.jpg","Croissant in an O for Orange box"],
- ["img/glaze.jpg","Orange dressing poured over a salad bowl"],["img/burger.jpg","A stacked burger held in both hands"],
- ["img/jar.jpg","A chilled jar drink with the O logo"],["img/dip.jpg","Fries and a creamy dip, seen from above"]
-];
-const INDEX=[
- ["Burgers & wraps","Aloo tikki, paneer gochujang, cheese burst. Orange mayo on every one."],
- ["Fries & sides","Peri peri, lemon chilli, loaded, onion rings and nachos."],
- ["Croissants & toasts","Butter, Nutella, caprese, thecha and chilli cheese."],
- ["Bowls & salads","Thai basil rice, smoothie bowls, paneer crunch."],
- ["Coffee & coolers","Cold brew, espresso ales, fresh Valencia juice."],
- ["Desserts","Orange sorbet, Ó brownie, softies and affogato."]
+ ["img/fries.jpg","Crinkle fries on an orange table"],["img/stool.jpg","A bowl on an orange stool"],
+ ["img/burger2.jpg","A burger held up in the sun"],["img/croissant.jpg","A croissant in an O for Orange box"],
+ ["img/ledge.jpg","A salad bowl on a dark ledge"],["img/glaze.jpg","Orange dressing being poured"],
+ ["img/croiss2.jpg","A croissant held in one hand"],["img/jar.jpg","A chilled jar drink with the O logo"],
+ ["img/seat.jpg","A salad bowl on an orange seat"],["img/burger.jpg","A stacked burger in both hands"],
+ ["img/branded.jpg","A bowl on O for Orange paper"],["img/ogoj.jpg","A cold drink against an orange tree"],
+ ["img/burger3.jpg","A close-up of a burger"],["img/salad.jpg","A bowl with orange pieces and herbs"],
+ ["img/croiss3.jpg","A croissant torn open"],["img/dip.jpg","Fries and a creamy dip, from above"]
 ];
 
 /* ---------- build DOM ---------- */
 $('#fh').innerHTML=[["Valencia"],["oranges.",1],["Squeezed"],["fresh.",1],["Served"],["chilled.",1]].map(w=>`<span class="wd${w[1]?' o':''}">${w[0]}</span> `).join('');
-$('#bTrack').innerHTML=BUILDS.map((b,i)=>`<article class="pc"><div class="pimg${b[4]?'':' plain'}">${b[4]?`<img src="${b[4]}" alt="" loading="lazy">`:'<b>Ó</b>'}</div><div class="ptx"><span class="no">0${i+1}</span><h3>${esc(b[1])}</h3><p>${esc(b[2])}</p><div class="try">Try it in <b>${esc(b[3])}</b></div></div></article>`).join('');
+$('#bTrack').innerHTML=BUILDS.map((b,i)=>`<article class="pc"><div class="pimg${b[3]?'':' plain'}">${b[3]?`<img src="${b[3]}" alt="" loading="lazy">`:'<b>Ó</b>'}</div><div class="ptx"><span class="no">0${i+1}</span><h3>${esc(b[1])}</h3><p>${esc(b[2])}</p></div></article>`).join('');
 $('#bNav').innerHTML=BUILDS.map((b,i)=>`<button role="tab" data-i="${i}" aria-current="${i===0}">${esc(b[0])}</button>`).join('');
 $('#names').innerHTML=DRINKS.map((d,i)=>`<li data-i="${i}"><span>${esc(d[0])}</span><small>0${i+1}</small></li>`).join('');
-$('#idx').innerHTML=INDEX.map((r,i)=>`<li class="rv" style="--d:${i*.06}s"><span class="n">0${i+1}</span><span class="t">${esc(r[0])}</span><span class="d">${esc(r[1])}</span></li>`).join('');
 const tile=p=>`<div class="tile"><img src="${p[0]}" alt="${esc(p[1])}" loading="lazy" decoding="async"></div>`;
-$('#s1').innerHTML=PH.map(tile).join('');
-$('#s2').innerHTML=PH.slice().reverse().map(tile).join('');
+$('#s1').innerHTML=PH.slice(0,8).map(tile).join('');
+$('#s2').innerHTML=PH.slice(8).map(tile).join('');
 
 /* ---------- reveal ---------- */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
@@ -416,7 +415,7 @@ const hdr=$('#hdr'),chap=$('#chap'),chN=$('#chN'),chT=$('#chT'),bar=$('#bar'),se
 const pline=$('#pline'),pSticky=$('#pSticky'),pImg=$('#pImg'),ring=$('#ring'),dim=$('#dim'),copy=$('#copy');
 const fruitEl=$('#fruit'),words=$$('#fh .wd'),facts=$$('.fact'),aImg=$('#aImg');
 const buildsEl=$('#builds'),track=$('#bTrack'),pcs=$$('.pc'),bImgs=$$('.pimg img'),bCnt=$('#bCnt'),bTabs=$$('#bNav button'),ghost=$('#ghost');
-const coffeeEl=$('#coffee'),nameEls=$$('#names li'),desc=$('#desc'),rt=$('#rt'),cImg=$('#cImg');
+const coffeeEl=$('#coffee'),nameEls=$$('#names li'),desc=$('#desc'),rt=$('#rt'),cImg=$('#cImg'),cImg2=$('#cImg2');
 const s1=$('#s1'),s2=$('#s2'),galEl=$('#gallery');
 let curDrink=-1,curBuild=-1,curSec=null,lastY=scrollY;
 
@@ -486,7 +485,8 @@ function frame(now){
   const k=Math.round(snap(p,DRINKS.length));
   if(k!==curDrink){curDrink=k;showDrink(k)}
   rt.style.transform=`rotate(${p*300}deg)`;
-  cImg.style.transform=`scale(${1.06+p*.1}) translate3d(0,${(.5-p)*18}px,0)`;
+  const cz=`scale(${1.06+p*.1}) translate3d(0,${(.5-p)*18}px,0)`;
+  cImg.style.transform=cz;cImg2.style.transform=cz;cImg2.style.opacity=k%2;
 
   /* ch4 gallery strips drift in opposite directions */
   p=sm('gal',vis(galEl),6);
